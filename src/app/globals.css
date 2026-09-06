@@ -1,0 +1,271 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #07090e;
+  --foreground: #f3f4f6;
+  --primary-cyan: #00f0ff;
+  --primary-blue: #0080ff;
+  --surface-slate: #0b0e14;
+  --surface-card: #0d121c;
+  --surface-border: rgba(0, 240, 255, 0.12);
+  --accent-glow: rgba(0, 240, 255, 0.4);
+  --accent-glow-strong: rgba(0, 240, 255, 0.8);
+}
+
+/* ========================================================================= */
+/* SPIDER-MAN / WEB-SLINGER THEME OVERRIDES (.theme-spiderman) */
+/* ========================================================================= */
+.theme-spiderman {
+  --background: #0a0507;
+  --foreground: #f8fafc;
+  --primary-cyan: #e21b24;
+  --primary-blue: #0055ff;
+  --surface-slate: #12070a;
+  --surface-card: #18090e;
+  --surface-border: rgba(226, 27, 36, 0.25);
+  --accent-glow: rgba(226, 27, 36, 0.45);
+  --accent-glow-strong: rgba(226, 27, 36, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% -10%, rgba(0, 240, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 100% 40%, rgba(0, 128, 255, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 0% 80%, rgba(0, 240, 255, 0.04) 0%, transparent 50%);
+  background-attachment: fixed;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.theme-spiderman body {
+  background-color: #0a0507;
+  background-image: 
+    radial-gradient(circle at 50% -10%, rgba(226, 27, 36, 0.14) 0%, transparent 60%),
+    radial-gradient(circle at 100% 40%, rgba(0, 85, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 0% 80%, rgba(226, 27, 36, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 60%, rgba(226, 27, 36, 0.04) 0%, transparent 40%);
+}
+
+/* Custom Cyber / Webbed Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: #151d2c;
+  border-radius: 4px;
+  border: 1px solid var(--surface-border);
+}
+.theme-spiderman ::-webkit-scrollbar-thumb {
+  background: #2a0e14;
+  border: 1px solid rgba(226, 27, 36, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-glow);
+}
+
+/* Glassmorphism and Neon accents */
+.glass-panel {
+  background: rgba(11, 14, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--surface-border);
+}
+
+.theme-spiderman .glass-panel {
+  background: rgba(18, 7, 10, 0.85);
+  border: 1px solid rgba(226, 27, 36, 0.25);
+}
+
+.glass-card {
+  background: linear-gradient(180deg, rgba(13, 18, 28, 0.85) 0%, rgba(10, 14, 22, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 240, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-spiderman .glass-card {
+  background: linear-gradient(180deg, rgba(24, 9, 14, 0.9) 0%, rgba(14, 6, 9, 0.95) 100%);
+  border: 1px solid rgba(226, 27, 36, 0.2);
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 25px -5px rgba(0, 240, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.theme-spiderman .glass-card:hover {
+  border-color: rgba(226, 27, 36, 0.5);
+  box-shadow: 0 0 30px -5px rgba(226, 27, 36, 0.35), 0 0 15px -3px rgba(0, 85, 255, 0.25);
+}
+
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.theme-spiderman .cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(226, 27, 36, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 85, 255, 0.04) 1px, transparent 1px);
+}
+
+.cyan-text-glow {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.3);
+}
+
+.theme-spiderman .cyan-text-glow {
+  text-shadow: 0 0 20px rgba(226, 27, 36, 0.8), 0 0 40px rgba(0, 85, 255, 0.4);
+}
+
+/* Hero Headline Brand Styling & Spider-Man Crimson Override */
+.hero-brand-gradient {
+  background-image: linear-gradient(to right, #00f0ff, #38bdf8, #0080ff);
+}
+
+.theme-spiderman .hero-brand-gradient {
+  background-image: linear-gradient(to right, #ff1a26, #ff3b47, #d60017) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  filter: drop-shadow(0 0 25px rgba(255, 26, 38, 0.85)) !important;
+  text-shadow: none !important;
+}
+
+/* Hero Deploy Server Button in Spider-Man Theme */
+.theme-spiderman .hero-deploy-btn {
+  background: #e21b24 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(226, 27, 36, 0.5) !important;
+}
+
+.theme-spiderman .hero-deploy-btn:hover {
+  background: #ff2a36 !important;
+  box-shadow: 0 0 28px rgba(226, 27, 36, 0.75) !important;
+}
+
+/* Hero Background & Overlay in Spider-Man Theme */
+.theme-spiderman .hero-bg-overlay {
+  background: linear-gradient(to top, #0a0507 0%, rgba(10, 5, 7, 0.75) 50%, transparent 100%) !important;
+}
+
+.theme-spiderman .hero-cyber-glow {
+  background: radial-gradient(circle, rgba(226, 27, 36, 0.15) 0%, transparent 70%) !important;
+}
+
+/* Spider-Man Palette Classes dynamically responding */
+.theme-spiderman .text-\[\#00f0ff\],
+.theme-spiderman .hover\:text-\[\#00f0ff\]:hover {
+  color: #ff2a36 !important;
+}
+
+.theme-spiderman .text-\[\#0080ff\] {
+  color: #1a73e8 !important;
+}
+
+.theme-spiderman .bg-\[\#00f0ff\] {
+  background-color: #e21b24 !important;
+  color: #ffffff !important;
+}
+
+.theme-spiderman .hover\:bg-\[\#33f3ff\]:hover {
+  background-color: #ff3845 !important;
+}
+
+.theme-spiderman .bg-\[\#00f0ff\]\/10,
+.theme-spiderman .bg-\[\#00f0ff\]\/5 {
+  background-color: rgba(226, 27, 36, 0.12) !important;
+}
+
+.theme-spiderman .border-\[\#00f0ff\]\/30,
+.theme-spiderman .border-\[\#00f0ff\]\/40,
+.theme-spiderman .border-\[\#00f0ff\]\/20,
+.theme-spiderman .border-\[\#00f0ff\]\/15,
+.theme-spiderman .border-\[\#00f0ff\],
+.theme-spiderman .hover\:border-\[\#00f0ff\]:hover,
+.theme-spiderman .hover\:border-\[\#00f0ff\]\/40:hover,
+.theme-spiderman .hover\:border-\[\#00f0ff\]\/50:hover {
+  border-color: rgba(226, 27, 36, 0.5) !important;
+}
+
+.theme-spiderman .shadow-cyan-sm {
+  box-shadow: 0 0 15px -2px rgba(226, 27, 36, 0.45) !important;
+}
+
+.theme-spiderman .shadow-cyan-md {
+  box-shadow: 0 0 28px -4px rgba(226, 27, 36, 0.55), 0 0 15px -2px rgba(0, 85, 255, 0.3) !important;
+}
+
+.theme-spiderman .bg-\[\#07090e\] {
+  background-color: #0a0507 !important;
+}
+
+.theme-spiderman .bg-\[\#0b0e14\] {
+  background-color: #12070a !important;
+}
+
+.theme-spiderman ::selection {
+  background-color: #e21b24 !important;
+  color: #ffffff !important;
+}
+
+/* Swinging animation for hanging Spider-Man easter egg */
+@keyframes swing {
+  0% {
+    transform: rotate(-6deg);
+    transform-origin: top center;
+  }
+  50% {
+    transform: rotate(6deg);
+    transform-origin: top center;
+  }
+  100% {
+    transform: rotate(-6deg);
+    transform-origin: top center;
+  }
+}
+
+.animate-swing {
+  animation: swing 3.8s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* Web shooting burst animation */
+@keyframes webZip {
+  0% {
+    transform: scale(0.8) translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-web-zip {
+  animation: webZip 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
