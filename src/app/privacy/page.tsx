@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[300px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
         <div>
           <Link
             href="/policies"
-            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Policies Overview</span>
@@ -44,16 +44,16 @@ export default function PrivacyPolicyPage() {
 
         {/* Header Section */}
         <header className="space-y-4 border-b border-white/10 pb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <Lock className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <Lock className="w-3.5 h-3.5 text-[#bcfc25]" />
             Data Protection & Privacy
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Rim Cloud — <span className="text-[#00f0ff] cyan-text-glow">Privacy Policy</span>
+            Rim Cloud — <span className="text-[#bcfc25] cyan-text-glow">Privacy Policy</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
               <strong>Last Updated:</strong> September 6, 2026
             </span>
             <span className="text-zinc-700">•</span>
@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-base sm:text-lg text-zinc-300 leading-relaxed pt-2">
             Rim Cloud (&quot;Rim Cloud&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) respects your privacy and is committed to protecting your personal information.
           </p>
-          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/20 text-sm text-zinc-300">
+          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/20 text-sm text-zinc-300">
             This Privacy Policy explains how we collect, use, store, and protect information when you use Rim Cloud websites, hosting services, billing systems, control panels, and support services.
           </div>
         </header>
@@ -72,7 +72,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 1 */}
           <section className="space-y-6 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">01.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">01.</span>
               Information We Collect
             </h2>
             <p>Depending on how you use our services, we may collect:</p>
@@ -80,7 +80,7 @@ export default function PrivacyPolicyPage() {
             {/* Account Information */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <UserCheck className="w-4 h-4 text-[#00f0ff]" />
+                <UserCheck className="w-4 h-4 text-[#bcfc25]" />
                 Account Information
               </h3>
               <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs font-mono text-zinc-300">
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
             {/* Billing Information */}
             <div className="space-y-3 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <Shield className="w-4 h-4 text-[#00f0ff]" />
+                <Shield className="w-4 h-4 text-[#bcfc25]" />
                 Billing Information
               </h3>
               <p className="text-sm text-zinc-400">
@@ -117,7 +117,7 @@ export default function PrivacyPolicyPage() {
             {/* Technical Information */}
             <div className="space-y-3 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <Server className="w-4 h-4 text-[#00f0ff]" />
+                <Server className="w-4 h-4 text-[#bcfc25]" />
                 Technical Information
               </h3>
               <p className="text-sm text-zinc-300">We may collect:</p>
@@ -136,7 +136,7 @@ export default function PrivacyPolicyPage() {
             {/* Support Information */}
             <div className="space-y-3 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <HelpCircle className="w-4 h-4 text-[#00f0ff]" />
+                <HelpCircle className="w-4 h-4 text-[#bcfc25]" />
                 Support Information
               </h3>
               <p className="text-sm text-zinc-300">When contacting support, we may retain:</p>
@@ -152,7 +152,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 2 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">02.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">02.</span>
               Information Stored on Hosting Services
             </h2>
             <p>
@@ -179,57 +179,57 @@ export default function PrivacyPolicyPage() {
           {/* Section 3 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">03.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">03.</span>
               How We Use Information
             </h2>
             <p>We may use information to:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-zinc-300">
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Create and manage accounts</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Provide hosting services</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Process payments</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Provide customer support</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Maintain infrastructure</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Prevent fraud</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Detect abuse</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Protect network security</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Communicate important service information</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Improve our services</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Comply with legal obligations</span>
               </li>
               <li className="flex items-center gap-2 p-2.5 rounded bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                 <span>Enforce our Terms and policies</span>
               </li>
             </ul>
@@ -238,7 +238,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 4 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">04.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">04.</span>
               Marketing
             </h2>
             <p>
@@ -255,7 +255,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 5 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">05.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">05.</span>
               Cookies
             </h2>
             <p>Our websites may use cookies and similar technologies for purposes such as:</p>
@@ -275,7 +275,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 6 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">06.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">06.</span>
               Third-Party Providers
             </h2>
             <p>We may use third-party providers for:</p>
@@ -298,7 +298,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 7 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">07.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">07.</span>
               Data Security
             </h2>
             <p>
@@ -307,7 +307,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm text-zinc-400">
               However, no internet-based system can be guaranteed to be completely secure.
             </p>
-            <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/20 text-sm text-zinc-300">
+            <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/20 text-sm text-zinc-300">
               Customers are responsible for maintaining secure passwords and protecting their account credentials.
             </div>
           </section>
@@ -315,7 +315,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 8 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">08.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">08.</span>
               Data Retention
             </h2>
             <p>We retain information for as long as reasonably necessary to:</p>
@@ -335,7 +335,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 9 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">09.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">09.</span>
               Data Deletion
             </h2>
             <p>
@@ -352,7 +352,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 10 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">10.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">10.</span>
               Children&apos;s Privacy
             </h2>
             <p>
@@ -366,7 +366,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 11 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">11.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">11.</span>
               Data Disclosure
             </h2>
             <p>Rim Cloud may disclose information when reasonably necessary to:</p>
@@ -386,7 +386,7 @@ export default function PrivacyPolicyPage() {
           {/* Section 12 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">12.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">12.</span>
               Changes to This Policy
             </h2>
             <p>We may update this Privacy Policy periodically.</p>
@@ -398,23 +398,23 @@ export default function PrivacyPolicyPage() {
           {/* Section 13 */}
           <section className="space-y-4 pt-2">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">13.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">13.</span>
               Contact
             </h2>
             <p>
               Privacy-related questions or requests may be submitted through Rim Cloud&apos;s official support channels.
             </p>
-            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 shadow-cyan-sm space-y-3">
+            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 shadow-cyan-sm space-y-3">
               <p className="text-lg font-black text-white">Rim Cloud</p>
-              <p className="text-sm text-[#00f0ff] italic font-serif">
+              <p className="text-sm text-[#bcfc25] italic font-serif">
                 Reliable Hosting. Built for Your Community.
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://billing.rimcloud.site/submitticket.php"
+                  href="https://billing.rimcloud.in/submitticket.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors"
                 >
                   <span>Contact Privacy Support</span>
                   <ExternalLink className="w-3.5 h-3.5" />

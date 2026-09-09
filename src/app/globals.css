@@ -5,13 +5,14 @@
 :root {
   --background: #07090e;
   --foreground: #f3f4f6;
-  --primary-cyan: #00f0ff;
+  --primary-cyan: #bcfc25;
+  --primary-lime: #bcfc25;
   --primary-blue: #0080ff;
   --surface-slate: #0b0e14;
   --surface-card: #0d121c;
-  --surface-border: rgba(0, 240, 255, 0.12);
-  --accent-glow: rgba(0, 240, 255, 0.4);
-  --accent-glow-strong: rgba(0, 240, 255, 0.8);
+  --surface-border: rgba(188, 252, 37, 0.12);
+  --accent-glow: rgba(188, 252, 37, 0.4);
+  --accent-glow-strong: rgba(188, 252, 37, 0.8);
 }
 
 /* ========================================================================= */
@@ -45,9 +46,9 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 50% -10%, rgba(0, 240, 255, 0.08) 0%, transparent 60%),
+    radial-gradient(circle at 50% -10%, rgba(188, 252, 37, 0.08) 0%, transparent 60%),
     radial-gradient(circle at 100% 40%, rgba(0, 128, 255, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 0% 80%, rgba(0, 240, 255, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 0% 80%, rgba(188, 252, 37, 0.04) 0%, transparent 50%);
   background-attachment: fixed;
   transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -97,7 +98,7 @@ body {
 .glass-card {
   background: linear-gradient(180deg, rgba(13, 18, 28, 0.85) 0%, rgba(10, 14, 22, 0.95) 100%);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(188, 252, 37, 0.12);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -107,8 +108,8 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(0, 240, 255, 0.35);
-  box-shadow: 0 0 25px -5px rgba(0, 240, 255, 0.2);
+  border-color: rgba(188, 252, 37, 0.4);
+  box-shadow: 0 0 25px -5px rgba(188, 252, 37, 0.25);
   transform: translateY(-2px);
 }
 
@@ -130,17 +131,19 @@ body {
     linear-gradient(to bottom, rgba(0, 85, 255, 0.04) 1px, transparent 1px);
 }
 
-.cyan-text-glow {
-  text-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(0, 240, 255, 0.3);
+.cyan-text-glow,
+.lime-text-glow {
+  text-shadow: 0 0 20px rgba(188, 252, 37, 0.6), 0 0 40px rgba(188, 252, 37, 0.3);
 }
 
-.theme-spiderman .cyan-text-glow {
+.theme-spiderman .cyan-text-glow,
+.theme-spiderman .lime-text-glow {
   text-shadow: 0 0 20px rgba(226, 27, 36, 0.8), 0 0 40px rgba(0, 85, 255, 0.4);
 }
 
 /* Hero Headline Brand Styling & Spider-Man Crimson Override */
 .hero-brand-gradient {
-  background-image: linear-gradient(to right, #00f0ff, #38bdf8, #0080ff);
+  background-image: linear-gradient(to right, #bcfc25, #d9ff66, #a3e635);
 }
 
 .theme-spiderman .hero-brand-gradient {
@@ -176,7 +179,9 @@ body {
 
 /* Spider-Man Palette Classes dynamically responding */
 .theme-spiderman .text-\[\#00f0ff\],
-.theme-spiderman .hover\:text-\[\#00f0ff\]:hover {
+.theme-spiderman .text-\[\#bcfc25\],
+.theme-spiderman .hover\:text-\[\#00f0ff\]:hover,
+.theme-spiderman .hover\:text-\[\#bcfc25\]:hover {
   color: #ff2a36 !important;
 }
 
@@ -184,17 +189,21 @@ body {
   color: #1a73e8 !important;
 }
 
-.theme-spiderman .bg-\[\#00f0ff\] {
+.theme-spiderman .bg-\[\#00f0ff\],
+.theme-spiderman .bg-\[\#bcfc25\] {
   background-color: #e21b24 !important;
   color: #ffffff !important;
 }
 
-.theme-spiderman .hover\:bg-\[\#33f3ff\]:hover {
+.theme-spiderman .hover\:bg-\[\#33f3ff\]:hover,
+.theme-spiderman .hover\:bg-\[\#cbfd4e\]:hover {
   background-color: #ff3845 !important;
 }
 
 .theme-spiderman .bg-\[\#00f0ff\]\/10,
-.theme-spiderman .bg-\[\#00f0ff\]\/5 {
+.theme-spiderman .bg-\[\#00f0ff\]\/5,
+.theme-spiderman .bg-\[\#bcfc25\]\/10,
+.theme-spiderman .bg-\[\#bcfc25\]\/5 {
   background-color: rgba(226, 27, 36, 0.12) !important;
 }
 
@@ -203,17 +212,27 @@ body {
 .theme-spiderman .border-\[\#00f0ff\]\/20,
 .theme-spiderman .border-\[\#00f0ff\]\/15,
 .theme-spiderman .border-\[\#00f0ff\],
+.theme-spiderman .border-\[\#bcfc25\]\/30,
+.theme-spiderman .border-\[\#bcfc25\]\/40,
+.theme-spiderman .border-\[\#bcfc25\]\/20,
+.theme-spiderman .border-\[\#bcfc25\]\/15,
+.theme-spiderman .border-\[\#bcfc25\],
 .theme-spiderman .hover\:border-\[\#00f0ff\]:hover,
 .theme-spiderman .hover\:border-\[\#00f0ff\]\/40:hover,
-.theme-spiderman .hover\:border-\[\#00f0ff\]\/50:hover {
+.theme-spiderman .hover\:border-\[\#00f0ff\]\/50:hover,
+.theme-spiderman .hover\:border-\[\#bcfc25\]:hover,
+.theme-spiderman .hover\:border-\[\#bcfc25\]\/40:hover,
+.theme-spiderman .hover\:border-\[\#bcfc25\]\/50:hover {
   border-color: rgba(226, 27, 36, 0.5) !important;
 }
 
-.theme-spiderman .shadow-cyan-sm {
+.theme-spiderman .shadow-cyan-sm,
+.theme-spiderman .shadow-lime-sm {
   box-shadow: 0 0 15px -2px rgba(226, 27, 36, 0.45) !important;
 }
 
-.theme-spiderman .shadow-cyan-md {
+.theme-spiderman .shadow-cyan-md,
+.theme-spiderman .shadow-lime-md {
   box-shadow: 0 0 28px -4px rgba(226, 27, 36, 0.55), 0 0 15px -2px rgba(0, 85, 255, 0.3) !important;
 }
 

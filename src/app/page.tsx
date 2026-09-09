@@ -46,15 +46,15 @@ export default function HomePage() {
         </div>
 
         {/* Subtle ambient lighting accent behind content */}
-        <div className="hero-cyber-glow absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-gradient-to-b from-[#00f0ff]/10 via-transparent to-transparent blur-[90px] rounded-full pointer-events-none z-0" />
+        <div className="hero-cyber-glow absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-gradient-to-b from-[#bcfc25]/10 via-transparent to-transparent blur-[90px] rounded-full pointer-events-none z-0" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto space-y-8">
             {/* Badge with animated cyan radar pulse */}
-            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/40 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm hover:border-[#00f0ff] transition-all">
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/40 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)] hover:border-[#bcfc25] transition-all">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00f0ff] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00f0ff]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#bcfc25] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#bcfc25]"></span>
               </span>
               <span>⚡ ULTRA LOW-LATENCY INFRASTRUCTURE</span>
             </div>
@@ -62,7 +62,7 @@ export default function HomePage() {
             {/* Headline */}
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.1]">
               Next-Gen Game & Cloud Server Hosting with{" "}
-              <span className="hero-brand-gradient relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#38bdf8] to-[#0080ff] cyan-text-glow">
+              <span className="hero-brand-gradient relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#bcfc25] via-[#d9ff66] to-[#a3e635] cyan-text-glow">
                 Rim Cloud
               </span>
             </h1>
@@ -75,10 +75,10 @@ export default function HomePage() {
             {/* Dual CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <a
-                href="https://billing.rimcloud.site"
+                href="https://billing.rimcloud.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-deploy-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-bold text-black bg-gradient-to-r from-[#00f0ff] to-[#00d0ff] hover:from-[#33f3ff] hover:to-[#00f0ff] shadow-cyan-md hover:shadow-cyan-lg transform hover:-translate-y-0.5 transition-all duration-200 group"
+                className="hero-deploy-btn w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-bold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] shadow-[0_0_20px_rgba(188,252,37,0.25)] hover:shadow-[0_0_30px_rgba(188,252,37,0.45)] transform hover:-translate-y-0.5 transition-all duration-200 group"
               >
                 <span>Deploy Server</span>
                 <ExternalLink className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
@@ -86,10 +86,35 @@ export default function HomePage() {
 
               <a
                 href="#ping-test"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold text-zinc-200 hover:text-white bg-[#0b0e14] hover:bg-[#121824] border border-[#00f0ff]/30 hover:border-[#00f0ff] transition-all duration-200 group"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-base font-semibold text-zinc-200 hover:text-white bg-[#0b0e14] hover:bg-[#121824] border border-[#bcfc25]/30 hover:border-[#bcfc25] transition-all duration-200 group"
               >
-                <Activity className="w-4 h-4 text-[#00f0ff] group-hover:scale-110 transition-transform" />
+                <Activity className="w-4 h-4 text-[#bcfc25] group-hover:scale-110 transition-transform" />
                 <span>Test Network Latency</span>
+              </a>
+            </div>
+
+            {/* Trustpilot Social Proof Banner */}
+            <div className="pt-2 flex items-center justify-center">
+              <a
+                href="https://www.trustpilot.com/review/rimcloud.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Rated on Trustpilot — Leave a Review"
+                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#0b0e14]/90 border border-[#00b67a]/40 hover:border-[#00b67a] shadow-[0_0_15px_rgba(0,182,122,0.15)] hover:shadow-[0_0_25px_rgba(0,182,122,0.3)] transition-all group backdrop-blur-md cursor-pointer"
+              >
+                <div className="flex items-center gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="flex items-center justify-center w-4 h-4 rounded-sm bg-[#00b67a] text-white shrink-0">
+                      <svg className="w-2.5 h-2.5 fill-white" viewBox="0 0 24 24">
+                        <path d="M24 9.625l-9.156-.75L12 0 9.156 8.875 0 9.625l7.031 6.125-2.156 8.875L12 19.875 19.125 24.625l-2.156-8.875z" />
+                      </svg>
+                    </span>
+                  ))}
+                </div>
+                <span className="text-xs font-mono text-zinc-300 group-hover:text-white transition-colors">
+                  Rated on <span className="font-semibold text-white">Trustpilot</span> — <span className="text-[#00b67a] font-semibold underline underline-offset-2">Leave a Review</span>
+                </span>
+                <ExternalLink className="w-3 h-3 text-[#00b67a] transition-transform group-hover:translate-x-0.5" />
               </a>
             </div>
 
@@ -107,16 +132,16 @@ export default function HomePage() {
 
                 <div className="flex flex-col items-center justify-center p-3 text-center sm:border-r border-white/[0.05]">
                   <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-400 uppercase tracking-wider mb-1">
-                    <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+                    <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
                     <span>Instant Setup</span>
                   </div>
                   <span className="text-2xl sm:text-3xl font-black font-mono text-white">&lt; 60s</span>
-                  <span className="text-[11px] text-[#00f0ff] font-mono mt-0.5">Automated</span>
+                  <span className="text-[11px] text-[#bcfc25] font-mono mt-0.5">Automated</span>
                 </div>
 
                 <div className="flex flex-col items-center justify-center p-3 text-center border-r border-white/[0.05]">
                   <div className="flex items-center gap-1.5 text-xs font-mono text-zinc-400 uppercase tracking-wider mb-1">
-                    <Activity className="w-3.5 h-3.5 text-[#00f0ff]" />
+                    <Activity className="w-3.5 h-3.5 text-[#bcfc25]" />
                     <span>Global Nodes</span>
                   </div>
                   <span className="text-2xl sm:text-3xl font-black font-mono text-white">4</span>
@@ -143,7 +168,7 @@ export default function HomePage() {
       <section className="relative py-20 bg-[#07090e] border-t border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider mb-3 shadow-[0_0_20px_rgba(188,252,37,0.25)]">
               Performance Architecture
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -158,8 +183,8 @@ export default function HomePage() {
             {/* Card 1: Pterodactyl Control Panel Preview (Large 7 Cols) */}
             <div className="lg:col-span-7 glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group">
               <div className="relative z-10 space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/30 flex items-center justify-center shadow-cyan-sm">
-                  <Sliders className="w-6 h-6 text-[#00f0ff]" />
+                <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/30 flex items-center justify-center shadow-cyan-sm">
+                  <Sliders className="w-6 h-6 text-[#bcfc25]" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white tracking-tight">
@@ -171,7 +196,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Modpacks & Server Engine Visual Showcase */}
-                <div className="relative w-full h-44 sm:h-52 rounded-xl overflow-hidden border border-[#00f0ff]/25 shadow-cyan-sm my-3 group/img">
+                <div className="relative w-full h-44 sm:h-52 rounded-xl overflow-hidden border border-[#bcfc25]/25 shadow-cyan-sm my-3 group/img">
                   <Image
                     src="https://i.imgur.com/b0Jg5pv.png"
                     alt="Pterodactyl Modpacks & Server Engine Showcase"
@@ -179,7 +204,7 @@ export default function HomePage() {
                     className="object-cover object-center group-hover/img:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#07090e] via-transparent to-transparent opacity-60" />
-                  <div className="absolute bottom-2.5 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#07090e]/85 backdrop-blur-md border border-[#00f0ff]/30 text-[10px] font-mono text-[#00f0ff]">
+                  <div className="absolute bottom-2.5 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#07090e]/85 backdrop-blur-md border border-[#bcfc25]/30 text-[10px] font-mono text-[#bcfc25]">
                     <Zap className="w-3 h-3" />
                     <span>Instant 1-Click Engine Provisioning</span>
                   </div>
@@ -192,7 +217,7 @@ export default function HomePage() {
                       <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                       <span>node-nova-01.rimcloud.site</span>
                     </div>
-                    <span className="text-[#00f0ff] px-2 py-0.5 rounded bg-[#00f0ff]/10">ONLINE</span>
+                    <span className="text-[#bcfc25] px-2 py-0.5 rounded bg-[#bcfc25]/10">ONLINE</span>
                   </div>
                   <div className="grid grid-cols-3 gap-2 text-[11px]">
                     <div className="p-2 rounded bg-[#0b0e14] border border-white/[0.05]">
@@ -272,8 +297,8 @@ export default function HomePage() {
             {/* Card 3: High-Frequency Enterprise Compute (6 Cols) */}
             <div className="lg:col-span-6 glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group">
               <div className="relative z-10 space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/30 flex items-center justify-center shadow-cyan-sm">
-                  <Cpu className="w-6 h-6 text-[#00f0ff]" />
+                <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/30 flex items-center justify-center shadow-cyan-sm">
+                  <Cpu className="w-6 h-6 text-[#bcfc25]" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white tracking-tight">
@@ -291,7 +316,7 @@ export default function HomePage() {
                   </div>
                   <div className="p-3 rounded-lg bg-[#07090e] border border-white/10">
                     <span className="text-zinc-500 block text-[10px]">NETWORK UPLINK</span>
-                    <span className="text-[#00f0ff] font-bold">10 Gbps Tier-1 Redundant</span>
+                    <span className="text-[#bcfc25] font-bold">10 Gbps Tier-1 Redundant</span>
                   </div>
                 </div>
               </div>
@@ -331,7 +356,7 @@ export default function HomePage() {
       <section id="services" className="relative py-24 bg-[#07090e] border-t border-white/[0.06]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider mb-3">
               Storefront Categories
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
@@ -344,13 +369,13 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Category 1: Minecraft Hosting */}
-            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-[#00f0ff]/20 hover:border-[#00f0ff] relative group">
+            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-[#bcfc25]/20 hover:border-[#bcfc25] relative group">
               <div className="space-y-5">
                 <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/40 flex items-center justify-center shadow-cyan-sm">
-                    <Server className="w-6 h-6 text-[#00f0ff]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/40 flex items-center justify-center shadow-cyan-sm">
+                    <Server className="w-6 h-6 text-[#bcfc25]" />
                   </div>
-                  <span className="px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-[11px] font-mono text-[#00f0ff] uppercase">
+                  <span className="px-3 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/30 text-[11px] font-mono text-[#bcfc25] uppercase shadow-[0_0_20px_rgba(188,252,37,0.25)]">
                     High Performance
                   </span>
                 </div>
@@ -366,23 +391,23 @@ export default function HomePage() {
 
                 <div className="pt-2 space-y-2.5 text-sm text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>High-Frequency Dedicated Compute</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Purpur, Paper, Forge & Fabric</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Unmetered Gen4 NVMe Storage</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Automated Scheduled Backups</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Free Custom Subdomain</span>
                   </div>
                 </div>
@@ -390,10 +415,10 @@ export default function HomePage() {
 
               <div className="pt-8">
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-black bg-[#00f0ff] hover:bg-[#33f3ff] shadow-cyan-sm hover:shadow-cyan-md transition-all duration-200 group/btn"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-black bg-[#bcfc25] hover:bg-[#cbfd4e] shadow-[0_0_20px_rgba(188,252,37,0.25)] hover:shadow-[0_0_28px_rgba(188,252,37,0.45)] transition-all duration-200 group/btn"
                 >
                   <span>Configure on Storefront</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
@@ -402,7 +427,7 @@ export default function HomePage() {
             </div>
 
             {/* Category 2: Discord Bot Hosting */}
-            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-white/10 hover:border-[#00f0ff]/50 relative group">
+            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-white/10 hover:border-[#bcfc25]/50 relative group">
               <div className="space-y-5">
                 <div className="flex items-center justify-between">
                   <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-white/20 flex items-center justify-center">
@@ -424,23 +449,23 @@ export default function HomePage() {
 
                 <div className="pt-2 space-y-2.5 text-sm text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Node.js, Python 3, Java, Rust & Go</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Instant Crash Auto-Restart Engine</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>GitHub Webhook & Git Pull Support</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Ultra-Low Resource Overhead</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Pterodactyl Console & Live Logs</span>
                   </div>
                 </div>
@@ -448,10 +473,10 @@ export default function HomePage() {
 
               <div className="pt-8">
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-[#0b0e14] hover:bg-[#121824] border border-white/20 hover:border-[#00f0ff]/60 transition-all duration-200 group/btn"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-[#0b0e14] hover:bg-[#121824] border border-white/20 hover:border-[#bcfc25]/60 transition-all duration-200 group/btn"
                 >
                   <span>Configure on Storefront</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
@@ -460,7 +485,7 @@ export default function HomePage() {
             </div>
 
             {/* Category 3: Cloud VPS */}
-            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-[#0080ff]/30 hover:border-[#00f0ff] relative group">
+            <div className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between border border-[#0080ff]/30 hover:border-[#bcfc25] relative group">
               <div className="space-y-5">
                 <div className="flex items-center justify-between">
                   <div className="w-12 h-12 rounded-xl bg-[#0b0e14] border border-[#0080ff]/40 flex items-center justify-center shadow-[0_0_20px_rgba(0,128,255,0.25)]">
@@ -482,23 +507,23 @@ export default function HomePage() {
 
                 <div className="pt-2 space-y-2.5 text-sm text-zinc-300">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Enterprise Multi-Core Architecture</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Dedicated Clean IPv4 & IPv6 Subnet</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Full Root Access (Ubuntu, Debian, Alma)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>10 Gbps Tier-1 Redundant Uplink</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0" />
                     <span>Instant Snapshot & Recovery Backups</span>
                   </div>
                 </div>
@@ -506,10 +531,10 @@ export default function HomePage() {
 
               <div className="pt-8">
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#0080ff] to-[#00f0ff] hover:opacity-90 transition-all duration-200 shadow-cyan-sm group/btn"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-[#0080ff] to-[#bcfc25] hover:opacity-90 transition-all duration-200 shadow-cyan-sm group/btn"
                 >
                   <span>Configure on Storefront</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
@@ -536,15 +561,15 @@ export default function HomePage() {
       {/* ========================================================================= */}
       <section className="relative py-24 bg-[#07090e]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="rounded-3xl bg-gradient-to-b from-[#0d121c] to-[#07090e] border border-[#00f0ff]/20 p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center space-y-8">
+          <div className="rounded-3xl bg-gradient-to-b from-[#0d121c] to-[#07090e] border border-[#bcfc25]/20 p-8 sm:p-12 lg:p-16 relative overflow-hidden text-center space-y-8">
             <div className="absolute inset-0 cyber-grid opacity-20 pointer-events-none" />
             
             <div className="max-w-3xl mx-auto space-y-4 relative z-10">
-              <span className="px-3.5 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider">
+              <span className="px-3.5 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
                 Enterprise SLA Guarantee
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-                Ready to elevate your hosting to <span className="text-[#00f0ff]">Rim Cloud</span>?
+                Ready to elevate your hosting to <span className="text-[#bcfc25]">Rim Cloud</span>?
               </h2>
               <p className="text-base sm:text-lg text-zinc-300">
                 Experience high-frequency dedicated compute with instant automated provisioning and a 24-hour money-back guarantee.
@@ -553,17 +578,31 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
               <a
-                href="https://billing.rimcloud.site"
+                href="https://billing.rimcloud.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-black bg-[#00f0ff] hover:bg-[#33f3ff] shadow-cyan-md hover:shadow-cyan-lg transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] shadow-[0_0_20px_rgba(188,252,37,0.25)] hover:shadow-[0_0_30px_rgba(188,252,37,0.45)] transition-all"
               >
                 <span>Deploy on Rim Cloud Storefront</span>
                 <ExternalLink className="w-4 h-4" />
               </a>
+              <a
+                href="https://www.trustpilot.com/review/rimcloud.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl text-base font-semibold text-white bg-[#0b0e14] border border-[#00b67a]/40 hover:border-[#00b67a] hover:shadow-[0_0_20px_rgba(0,182,122,0.25)] transition-all group"
+              >
+                <div className="flex items-center justify-center w-5 h-5 rounded-sm bg-[#00b67a] shrink-0">
+                  <svg className="w-3 h-3 fill-white" viewBox="0 0 24 24">
+                    <path d="M24 9.625l-9.156-.75L12 0 9.156 8.875 0 9.625l7.031 6.125-2.156 8.875L12 19.875 19.125 24.625l-2.156-8.875z" />
+                  </svg>
+                </div>
+                <span>Review on <strong className="text-[#00b67a] group-hover:text-emerald-400">Trustpilot</strong></span>
+                <ExternalLink className="w-4 h-4 text-[#00b67a]" />
+              </a>
               <Link
                 href="/about"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-zinc-200 hover:text-white bg-[#0b0e14] border border-white/10 hover:border-[#00f0ff]/40 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-base font-semibold text-zinc-200 hover:text-white bg-[#0b0e14] border border-white/10 hover:border-[#bcfc25]/40 transition-all"
               >
                 <span>Learn About Our Infrastructure</span>
                 <ChevronRight className="w-4 h-4" />

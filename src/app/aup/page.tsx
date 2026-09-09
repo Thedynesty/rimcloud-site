@@ -28,7 +28,7 @@ export default function AcceptableUsePolicyPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[300px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
@@ -36,7 +36,7 @@ export default function AcceptableUsePolicyPage() {
         <div>
           <Link
             href="/policies"
-            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Policies Overview</span>
@@ -50,11 +50,11 @@ export default function AcceptableUsePolicyPage() {
             Infrastructure & Network Protection
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Rim Cloud — <span className="text-[#00f0ff] cyan-text-glow">Acceptable Use Policy</span>
+            Rim Cloud — <span className="text-[#bcfc25] cyan-text-glow">Acceptable Use Policy</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
               <strong>Last Updated:</strong> September 6, 2026
             </span>
             <span className="text-zinc-700">•</span>
@@ -63,7 +63,7 @@ export default function AcceptableUsePolicyPage() {
           <p className="text-base sm:text-lg text-zinc-300 leading-relaxed pt-2">
             This Acceptable Use Policy (&quot;AUP&quot;) establishes activities that are prohibited when using Rim Cloud services.
           </p>
-          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/20 text-sm text-zinc-300">
+          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/20 text-sm text-zinc-300">
             The purpose of this policy is to protect Rim Cloud, our customers, our infrastructure, and the wider internet.
           </div>
         </header>
@@ -73,29 +73,29 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 1 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">01.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">01.</span>
               General Requirements
             </h2>
             <p>Customers must:</p>
             <ul className="space-y-2 text-sm text-zinc-300">
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Use Rim Cloud services legally and responsibly.</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Protect their account credentials.</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Prevent unauthorized access to their services.</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Ensure that users operating under their account comply with this policy.</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Respond reasonably to abuse or security reports.</span>
               </li>
             </ul>
@@ -107,7 +107,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 2 */}
           <section className="space-y-6 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">02.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">02.</span>
               Prohibited Activities
             </h2>
             <p className="text-sm text-zinc-400">Rim Cloud services must not be used for:</p>
@@ -188,7 +188,7 @@ export default function AcceptableUsePolicyPage() {
             {/* Cryptocurrency Mining */}
             <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] space-y-2">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <Cpu className="w-4 h-4 text-[#00f0ff]" />
+                <Cpu className="w-4 h-4 text-[#bcfc25]" />
                 Cryptocurrency Mining
               </h3>
               <p className="text-sm text-zinc-300">
@@ -199,7 +199,7 @@ export default function AcceptableUsePolicyPage() {
             {/* Copyright and Intellectual Property */}
             <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] space-y-2">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <Shield className="w-4 h-4 text-[#00f0ff]" />
+                <Shield className="w-4 h-4 text-[#bcfc25]" />
                 Copyright and Intellectual Property
               </h3>
               <p className="text-sm text-zinc-300">
@@ -236,7 +236,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 3 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">03.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">03.</span>
               Minecraft-Specific Rules
             </h2>
             <p>Minecraft servers must not be used to:</p>
@@ -256,7 +256,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 4 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">04.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">04.</span>
               Discord Bot Rules
             </h2>
             <p>Discord bots hosted with Rim Cloud must comply with applicable Discord policies.</p>
@@ -274,7 +274,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 5 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">05.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">05.</span>
               Web Hosting Rules
             </h2>
             <p className="text-sm text-zinc-400">Web hosting services must not be used to host:</p>
@@ -293,7 +293,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 6 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">06.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">06.</span>
               Resource Abuse
             </h2>
             <p>
@@ -307,7 +307,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 7 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">07.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">07.</span>
               Security Incidents
             </h2>
             <p>
@@ -321,7 +321,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 8 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">08.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">08.</span>
               Enforcement
             </h2>
             <p>Depending on the severity of a violation, Rim Cloud may:</p>
@@ -344,7 +344,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 9 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">09.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">09.</span>
               Abuse Reports
             </h2>
             <p>
@@ -358,7 +358,7 @@ export default function AcceptableUsePolicyPage() {
           {/* Section 10 */}
           <section className="space-y-4 pt-2">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">10.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">10.</span>
               Policy Changes
             </h2>
             <p>Rim Cloud may update this AUP when necessary.</p>
@@ -367,17 +367,17 @@ export default function AcceptableUsePolicyPage() {
             </p>
 
             {/* Brand Callout Box */}
-            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 shadow-cyan-sm space-y-3">
+            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 shadow-[0_0_20px_rgba(188,252,37,0.25)] space-y-3">
               <p className="text-lg font-black text-white">Rim Cloud</p>
-              <p className="text-sm text-[#00f0ff] italic font-serif">
+              <p className="text-sm text-[#bcfc25] italic font-serif">
                 Reliable Hosting. Built for Your Community.
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://billing.rimcloud.site/submitticket.php"
+                  href="https://billing.rimcloud.in/submitticket.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors"
                 >
                   <span>Submit Abuse Report</span>
                   <ExternalLink className="w-3.5 h-3.5" />

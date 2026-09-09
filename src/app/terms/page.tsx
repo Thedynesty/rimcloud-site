@@ -26,7 +26,7 @@ export default function TermsOfServicePage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[300px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
@@ -34,7 +34,7 @@ export default function TermsOfServicePage() {
         <div>
           <Link
             href="/policies"
-            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Policies Overview</span>
@@ -43,16 +43,16 @@ export default function TermsOfServicePage() {
 
         {/* Header Section */}
         <header className="space-y-4 border-b border-white/10 pb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <FileText className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <FileText className="w-3.5 h-3.5 text-[#bcfc25]" />
             Legal Documentation
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Rim Cloud — <span className="text-[#00f0ff] cyan-text-glow">Terms of Service</span>
+            Rim Cloud — <span className="text-[#bcfc25] cyan-text-glow">Terms of Service</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
               <strong>Last Updated:</strong> September 6, 2026
             </span>
             <span className="text-zinc-700">•</span>
@@ -62,7 +62,7 @@ export default function TermsOfServicePage() {
             These Terms of Service (&quot;Terms&quot;) govern your access to and use of services provided by{" "}
             <strong className="text-white">Rim Cloud</strong> (&quot;Rim Cloud&quot;, &quot;we&quot;, &quot;us&quot;, or &quot;our&quot;).
           </p>
-          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/20 text-sm text-zinc-300">
+          <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/20 text-sm text-zinc-300">
             By purchasing, accessing, or using any Rim Cloud service, you agree to these Terms. If you do not agree with these Terms, you must not use our services.
           </div>
         </header>
@@ -72,33 +72,33 @@ export default function TermsOfServicePage() {
           {/* Section 1 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">01.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">01.</span>
               Services
             </h2>
             <p>Rim Cloud provides hosting and related services, including but not limited to:</p>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Minecraft Server Hosting</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Discord Bot Hosting</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Web Hosting</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>VPS or other hosting services offered by Rim Cloud</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Storage and backup services</span>
               </li>
               <li className="flex items-start gap-2.5 p-3 rounded-lg bg-[#0b0e14] border border-[#1e293b]">
-                <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                 <span>Additional hosting-related products and services</span>
               </li>
             </ul>
@@ -110,7 +110,7 @@ export default function TermsOfServicePage() {
           {/* Section 2 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">02.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">02.</span>
               Account Requirements
             </h2>
             <p>Customers are responsible for providing accurate information when creating an account.</p>
@@ -129,7 +129,7 @@ export default function TermsOfServicePage() {
           {/* Section 3 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">03.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">03.</span>
               Age Requirement
             </h2>
             <p>You must be at least 13 years old to use Rim Cloud services.</p>
@@ -141,7 +141,7 @@ export default function TermsOfServicePage() {
           {/* Section 4 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">04.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">04.</span>
               Payments and Billing
             </h2>
             <p>Services must be paid for before they are provisioned unless otherwise agreed in writing.</p>
@@ -154,7 +154,7 @@ export default function TermsOfServicePage() {
           {/* Section 5 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">05.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">05.</span>
               Service Renewals
             </h2>
             <p>Services may automatically renew where recurring billing is enabled.</p>
@@ -169,7 +169,7 @@ export default function TermsOfServicePage() {
           {/* Section 6 */}
           <section className="space-y-6 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">06.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">06.</span>
               Resource Allocation and Overcommitment
             </h2>
             <p>
@@ -193,7 +193,7 @@ export default function TermsOfServicePage() {
             {/* 6.1 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.1</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.1</span>
                 RAM and Memory
               </h3>
               <p className="text-sm text-zinc-300">
@@ -210,7 +210,7 @@ export default function TermsOfServicePage() {
             {/* 6.2 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.2</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.2</span>
                 CPU and vCPU
               </h3>
               <p className="text-sm text-zinc-300">CPU resources may be shared between multiple customers.</p>
@@ -225,7 +225,7 @@ export default function TermsOfServicePage() {
             {/* 6.3 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.3</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.3</span>
                 Storage
               </h3>
               <p className="text-sm text-zinc-300">
@@ -242,7 +242,7 @@ export default function TermsOfServicePage() {
             {/* 6.4 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.4</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.4</span>
                 Resource Performance
               </h3>
               <p className="text-sm text-zinc-300">
@@ -267,7 +267,7 @@ export default function TermsOfServicePage() {
             {/* 6.5 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.5</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.5</span>
                 Infrastructure Management
               </h3>
               <p className="text-sm text-zinc-300">
@@ -281,7 +281,7 @@ export default function TermsOfServicePage() {
             {/* 6.6 */}
             <div className="space-y-2.5 p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b]">
               <h3 className="text-lg font-bold text-white flex items-center gap-2">
-                <span className="text-[#00f0ff] font-mono text-sm">6.6</span>
+                <span className="text-[#bcfc25] font-mono text-sm">6.6</span>
                 Severe Resource Abuse
               </h3>
               <p className="text-sm text-zinc-300">
@@ -296,7 +296,7 @@ export default function TermsOfServicePage() {
           {/* Section 7 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">07.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">07.</span>
               Service Usage
             </h2>
             <p>Customers must use Rim Cloud services responsibly and in accordance with:</p>
@@ -312,7 +312,7 @@ export default function TermsOfServicePage() {
           {/* Section 8 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">08.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">08.</span>
               Minecraft Services
             </h2>
             <p>
@@ -329,7 +329,7 @@ export default function TermsOfServicePage() {
           {/* Section 9 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">09.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">09.</span>
               Web Hosting
             </h2>
             <p>
@@ -343,7 +343,7 @@ export default function TermsOfServicePage() {
           {/* Section 10 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">10.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">10.</span>
               Discord Bot Hosting
             </h2>
             <p>
@@ -360,7 +360,7 @@ export default function TermsOfServicePage() {
           {/* Section 11 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">11.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">11.</span>
               Resource Abuse
             </h2>
             <p>Customers must not intentionally abuse or circumvent resource limitations.</p>
@@ -372,7 +372,7 @@ export default function TermsOfServicePage() {
           {/* Section 12 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">12.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">12.</span>
               Suspension and Termination
             </h2>
             <p>Rim Cloud may suspend or terminate services when necessary due to:</p>
@@ -396,7 +396,7 @@ export default function TermsOfServicePage() {
           {/* Section 13 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">13.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">13.</span>
               Data and Backups
             </h2>
             <p>Customers are responsible for maintaining their own backups of important data.</p>
@@ -411,7 +411,7 @@ export default function TermsOfServicePage() {
           {/* Section 14 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">14.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">14.</span>
               Refunds
             </h2>
             <p>
@@ -425,7 +425,7 @@ export default function TermsOfServicePage() {
           {/* Section 15 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">15.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">15.</span>
               Availability
             </h2>
             <p>
@@ -439,7 +439,7 @@ export default function TermsOfServicePage() {
           {/* Section 16 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">16.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">16.</span>
               Intellectual Property
             </h2>
             <p>
@@ -456,7 +456,7 @@ export default function TermsOfServicePage() {
           {/* Section 17 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">17.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">17.</span>
               Third-Party Services
             </h2>
             <p>
@@ -470,7 +470,7 @@ export default function TermsOfServicePage() {
           {/* Section 18 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">18.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">18.</span>
               Limitation of Liability
             </h2>
             <p>
@@ -494,7 +494,7 @@ export default function TermsOfServicePage() {
           {/* Section 19 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">19.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">19.</span>
               Customer Responsibility
             </h2>
             <p>
@@ -505,7 +505,7 @@ export default function TermsOfServicePage() {
           {/* Section 20 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">20.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">20.</span>
               Policy Changes
             </h2>
             <p>Rim Cloud may update these Terms from time to time.</p>
@@ -520,23 +520,23 @@ export default function TermsOfServicePage() {
           {/* Section 21 */}
           <section className="space-y-4 pt-2">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">21.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">21.</span>
               Contact
             </h2>
             <p>
               Questions regarding these Terms may be directed to Rim Cloud through our official support channels.
             </p>
-            <div className="p-6 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 shadow-cyan-sm space-y-3">
+            <div className="p-6 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 shadow-cyan-sm space-y-3">
               <p className="text-lg font-black text-white">Rim Cloud</p>
-              <p className="text-sm text-[#00f0ff] italic font-serif">
+              <p className="text-sm text-[#bcfc25] italic font-serif">
                 Reliable Hosting. Built for Your Community.
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://billing.rimcloud.site/submitticket.php"
+                  href="https://billing.rimcloud.in/submitticket.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors"
                 >
                   <span>Open Support Ticket</span>
                   <ExternalLink className="w-3.5 h-3.5" />

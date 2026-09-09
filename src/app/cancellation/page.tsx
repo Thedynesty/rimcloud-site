@@ -23,7 +23,7 @@ export default function CancellationPolicyPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[300px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
@@ -31,7 +31,7 @@ export default function CancellationPolicyPage() {
         <div>
           <Link
             href="/policies"
-            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Policies Overview</span>
@@ -40,16 +40,16 @@ export default function CancellationPolicyPage() {
 
         {/* Header Section */}
         <header className="space-y-4 border-b border-white/10 pb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <RotateCcw className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <RotateCcw className="w-3.5 h-3.5 text-[#bcfc25]" />
             Service Management
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Rim Cloud — <span className="text-[#00f0ff] cyan-text-glow">Cancellation Policy</span>
+            Rim Cloud — <span className="text-[#bcfc25] cyan-text-glow">Cancellation Policy</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
               <strong>Last Updated:</strong> September 6, 2026
             </span>
             <span className="text-zinc-700">•</span>
@@ -65,13 +65,13 @@ export default function CancellationPolicyPage() {
           {/* Section 1 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">01.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">01.</span>
               Cancelling a Service
             </h2>
             <p>
               Customers may request cancellation through the Rim Cloud customer panel or official support channels.
             </p>
-            <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/20 text-sm text-zinc-300">
+            <div className="p-4 rounded-xl bg-[#0b0e14] border border-[#bcfc25]/20 text-sm text-zinc-300">
               Customers should cancel services before their next renewal date if they do not wish to be charged for another billing period.
             </div>
           </section>
@@ -79,7 +79,7 @@ export default function CancellationPolicyPage() {
           {/* Section 2 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">02.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">02.</span>
               Immediate Cancellation
             </h2>
             <p>Customers may request immediate termination of a service.</p>
@@ -97,7 +97,7 @@ export default function CancellationPolicyPage() {
           {/* Section 3 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">03.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">03.</span>
               End-of-Term Cancellation
             </h2>
             <p>
@@ -111,7 +111,7 @@ export default function CancellationPolicyPage() {
           {/* Section 4 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">04.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">04.</span>
               Automatic Renewal
             </h2>
             <p>
@@ -128,7 +128,7 @@ export default function CancellationPolicyPage() {
           {/* Section 5 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">05.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">05.</span>
               Non-Payment
             </h2>
             <p>If an invoice remains unpaid, Rim Cloud may suspend the service.</p>
@@ -140,7 +140,7 @@ export default function CancellationPolicyPage() {
           {/* Section 6 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">06.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">06.</span>
               Data After Cancellation
             </h2>
             <p>
@@ -154,7 +154,7 @@ export default function CancellationPolicyPage() {
           {/* Section 7 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">07.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">07.</span>
               Termination for Abuse
             </h2>
             <p>Rim Cloud may terminate services immediately when required because of:</p>
@@ -196,7 +196,7 @@ export default function CancellationPolicyPage() {
           {/* Section 8 */}
           <section className="space-y-4 border-b border-white/[0.06] pb-8">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">08.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">08.</span>
               Refunds After Cancellation
             </h2>
             <p>Cancellation and refunds are separate processes.</p>
@@ -211,23 +211,23 @@ export default function CancellationPolicyPage() {
           {/* Section 9 */}
           <section className="space-y-4 pt-2">
             <h2 className="text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">09.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">09.</span>
               Policy Changes
             </h2>
             <p>Rim Cloud may update this Cancellation Policy when necessary.</p>
 
             {/* Brand Callout */}
-            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 shadow-cyan-sm space-y-3">
+            <div className="mt-8 p-6 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 shadow-cyan-sm space-y-3">
               <p className="text-lg font-black text-white">Rim Cloud</p>
-              <p className="text-sm text-[#00f0ff] italic font-serif">
+              <p className="text-sm text-[#bcfc25] italic font-serif">
                 Reliable Hosting. Built for Your Community.
               </p>
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors"
                 >
                   <span>Manage in Client Portal</span>
                   <ExternalLink className="w-3.5 h-3.5" />

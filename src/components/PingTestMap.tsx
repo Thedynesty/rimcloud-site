@@ -179,7 +179,7 @@ export default function PingTestMap() {
   };
 
   const getLatencyStatus = (ms: number | null) => {
-    if (ms === null) return { text: "Measuring...", color: "cyan", badge: "bg-cyan-500/20 text-cyan-300 border-cyan-500/40" };
+    if (ms === null) return { text: "Measuring...", color: "lime", badge: "bg-[#bcfc25]/15 text-[#bcfc25] border-[#bcfc25]/40" };
     if (ms < 45) {
       return {
         text: "Ultra Low Latency (Exceptional)",
@@ -191,7 +191,7 @@ export default function PingTestMap() {
       return {
         text: "Optimal Routing",
         color: "cyan",
-        badge: "bg-[#00f0ff]/15 text-[#00f0ff] border-[#00f0ff]/40 shadow-[0_0_15px_rgba(0,240,255,0.25)]",
+        badge: "bg-[#bcfc25]/15 text-[#bcfc25] border-[#bcfc25]/40 shadow-[0_0_15px_rgba(188,252,37,0.25)]",
       };
     }
     return {
@@ -206,18 +206,18 @@ export default function PingTestMap() {
   return (
     <section id="ping-test" className="relative py-24 bg-[#07090e] border-t border-b border-white/[0.06] overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#00f0ff]/5 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#bcfc25]/5 blur-[130px] rounded-full pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-[400px] h-[200px] bg-[#0080ff]/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-4 shadow-cyan-sm">
-            <Activity className="w-3.5 h-3.5 animate-pulse text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider mb-4 shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <Activity className="w-3.5 h-3.5 animate-pulse text-[#bcfc25]" />
             Live Network Diagnostic Matrix
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Interactive Global <span className="text-[#00f0ff] cyan-text-glow">Ping Test Map</span>
+            Interactive Global <span className="text-[#bcfc25] cyan-text-glow">Ping Test Map</span>
           </h2>
           <p className="mt-4 text-base sm:text-lg text-zinc-400">
             Real-time latency metrics from your client to Rim Cloud core points of presence. Click any node pin on the world map to simulate packet routing and copy client verification hostnames.
@@ -237,8 +237,8 @@ export default function PingTestMap() {
                 }}
                 className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl font-medium text-xs sm:text-sm transition-all duration-300 ${
                   isSelected
-                    ? "bg-[#0b0e14] border-2 border-[#00f0ff] text-white shadow-cyan-md scale-105"
-                    : "bg-[#0b0e14]/80 border border-white/10 text-zinc-400 hover:text-white hover:border-[#00f0ff]/40"
+                    ? "bg-[#0b0e14] border-2 border-[#bcfc25] text-white shadow-cyan-md scale-105"
+                    : "bg-[#0b0e14]/80 border border-white/10 text-zinc-400 hover:text-white hover:border-[#bcfc25]/40"
                 }`}
               >
                 <span className="text-base">{node.flag}</span>
@@ -250,16 +250,16 @@ export default function PingTestMap() {
         </div>
 
         {/* Realistic Dark-Themed World Map Container */}
-        <div className="relative rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/20 p-2 sm:p-4 lg:p-6 shadow-[0_0_50px_rgba(0,0,0,0.85)] overflow-hidden">
+        <div className="relative rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/20 p-2 sm:p-4 lg:p-6 shadow-[0_0_50px_rgba(0,0,0,0.85)] overflow-hidden">
           {/* Map Status Bar Overlay */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-3 px-3 py-2 border-b border-white/[0.08] relative z-20 text-xs font-mono">
             <div className="flex items-center gap-2 text-zinc-400">
-              <Globe className="w-4 h-4 text-[#00f0ff]" />
+              <Globe className="w-4 h-4 text-[#bcfc25]" />
               <span>CORE BACKBONE: <strong className="text-white">BGP ANYCAST / 10G DUAL-STACK</strong></span>
             </div>
             <div className="flex items-center gap-4 text-zinc-400">
               <span className="flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#00f0ff] shadow-cyan-sm"></span> Selected Node
+                <span className="w-2.5 h-2.5 rounded-full bg-[#bcfc25] shadow-cyan-sm"></span> Selected Node
               </span>
               <span className="flex items-center gap-1.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Active Scrubbing
@@ -285,7 +285,7 @@ export default function PingTestMap() {
                   </feMerge>
                 </filter>
                 <linearGradient id="routingCableGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#00f0ff" stopOpacity="0.8" />
+                  <stop offset="0%" stopColor="#bcfc25" stopOpacity="0.8" />
                   <stop offset="50%" stopColor="#38bdf8" stopOpacity="0.5" />
                   <stop offset="100%" stopColor="#0080ff" stopOpacity="0.8" />
                 </linearGradient>
@@ -339,7 +339,7 @@ export default function PingTestMap() {
               <path
                 d="M 1500 497 Q 1750 560 1980 480"
                 fill="none"
-                stroke="#00f0ff"
+                stroke="#bcfc25"
                 strokeWidth="1.5"
                 strokeDasharray="4 8"
                 opacity="0.3"
@@ -347,7 +347,7 @@ export default function PingTestMap() {
               <path
                 d="M 20 400 Q 250 330 480 274"
                 fill="none"
-                stroke="#00f0ff"
+                stroke="#bcfc25"
                 strokeWidth="1.5"
                 strokeDasharray="4 8"
                 opacity="0.3"
@@ -384,34 +384,34 @@ export default function PingTestMap() {
                       {/* Radial Ripple Waves (animate-ping) */}
                       {isSelected ? (
                         <>
-                          <span className="absolute inline-flex h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#00f0ff] opacity-60 animate-ping pointer-events-none" />
-                          <span className="absolute inline-flex h-7 w-7 sm:h-9 sm:w-9 rounded-full bg-[#00f0ff]/30 animate-pulse pointer-events-none" />
+                          <span className="absolute inline-flex h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-[#bcfc25] opacity-60 animate-ping pointer-events-none" />
+                          <span className="absolute inline-flex h-7 w-7 sm:h-9 sm:w-9 rounded-full bg-[#bcfc25]/30 animate-pulse pointer-events-none" />
                         </>
                       ) : (
-                        <span className="absolute inline-flex h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-cyan-400/20 group-hover:bg-[#00f0ff]/40 group-hover:animate-ping transition-all pointer-events-none" />
+                        <span className="absolute inline-flex h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-[#bcfc25]/20 group-hover:bg-[#bcfc25]/40 group-hover:animate-ping transition-all pointer-events-none" />
                       )}
 
                       {/* Pin Outer Glow Ring */}
                       <span
                         className={`relative flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full border-2 transition-all duration-300 shadow-md ${
                           isSelected
-                            ? "bg-[#0b0e14] border-[#00f0ff] shadow-cyan-md scale-110"
-                            : "bg-[#0b0e14]/90 border-white/40 group-hover:border-[#00f0ff] group-hover:scale-110"
+                            ? "bg-[#0b0e14] border-[#bcfc25] shadow-cyan-md scale-110"
+                            : "bg-[#0b0e14]/90 border-white/40 group-hover:border-[#bcfc25] group-hover:scale-110"
                         }`}
                       >
                         {/* Pin Center Dot */}
                         <span
                           className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-colors ${
                             isSelected
-                              ? "bg-[#00f0ff] shadow-[0_0_8px_#00f0ff]"
-                              : "bg-white group-hover:bg-[#00f0ff]"
+                              ? "bg-[#bcfc25] shadow-[0_0_8px_#bcfc25]"
+                              : "bg-white group-hover:bg-[#bcfc25]"
                           }`}
                         />
                       </span>
 
                       {/* Hover / Active Floating Card */}
                       <div
-                        className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 rounded-xl bg-[#0b0e14]/95 border border-[#00f0ff]/40 backdrop-blur-md shadow-cyan-sm whitespace-nowrap transition-all duration-200 pointer-events-none z-40 ${
+                        className={`absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 rounded-xl bg-[#0b0e14]/95 border border-[#bcfc25]/40 backdrop-blur-md shadow-cyan-sm whitespace-nowrap transition-all duration-200 pointer-events-none z-40 ${
                           isSelected || isHovered
                             ? "opacity-100 translate-y-0 scale-100"
                             : "opacity-0 translate-y-1 scale-95"
@@ -421,7 +421,7 @@ export default function PingTestMap() {
                           <span className="text-sm">{node.flag}</span>
                           <span>{node.name.split(",")[0]}</span>
                           {isSelected && (
-                            <span className="text-[10px] text-[#00f0ff] font-semibold bg-[#00f0ff]/10 px-1.5 py-0.2 rounded border border-[#00f0ff]/30">
+                            <span className="text-[10px] text-[#bcfc25] font-semibold bg-[#bcfc25]/10 px-1.5 py-0.2 rounded border border-[#bcfc25]/30">
                               ACTIVE
                             </span>
                           )}
@@ -441,13 +441,13 @@ export default function PingTestMap() {
         </div>
 
         {/* Live Diagnostic Engine Panel */}
-        <div className="mt-8 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 p-6 sm:p-8 shadow-cyan-sm relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00f0ff] to-transparent" />
+        <div className="mt-8 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 p-6 sm:p-8 shadow-cyan-sm relative overflow-hidden">
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#bcfc25] to-transparent" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             {/* Left Telemetry: Region & Measured Latency */}
             <div className="lg:col-span-4 space-y-4">
-              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#00f0ff]">
+              <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#bcfc25]">
                 <Activity className="w-4 h-4" />
                 Active Node Diagnostics
               </div>
@@ -479,8 +479,8 @@ export default function PingTestMap() {
               </span>
               <div className="flex items-baseline gap-2">
                 {isPinging ? (
-                  <div className="flex items-center gap-2 text-3xl font-extrabold text-[#00f0ff]">
-                    <RefreshCw className="w-6 h-6 animate-spin text-[#00f0ff]" />
+                  <div className="flex items-center gap-2 text-3xl font-extrabold text-[#bcfc25]">
+                    <RefreshCw className="w-6 h-6 animate-spin text-[#bcfc25]" />
                     <span className="font-mono">Pinging...</span>
                   </div>
                 ) : (
@@ -488,7 +488,7 @@ export default function PingTestMap() {
                     <span className="text-5xl sm:text-6xl font-black font-mono tracking-tight text-white">
                       {latency ?? "--"}
                     </span>
-                    <span className="text-xl font-bold font-mono text-[#00f0ff]">ms</span>
+                    <span className="text-xl font-bold font-mono text-[#bcfc25]">ms</span>
                   </>
                 )}
               </div>
@@ -497,7 +497,7 @@ export default function PingTestMap() {
               <button
                 onClick={() => runPingTest(selectedNode)}
                 disabled={isPinging}
-                className="mt-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 hover:border-[#00f0ff]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all disabled:opacity-50 cursor-pointer"
+                className="mt-4 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 hover:border-[#bcfc25]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all disabled:opacity-50 cursor-pointer"
               >
                 <RefreshCw className={`w-3.5 h-3.5 ${isPinging ? "animate-spin" : ""}`} />
                 <span>Re-measure Route</span>
@@ -523,14 +523,14 @@ export default function PingTestMap() {
             <div className="lg:col-span-4 space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-mono uppercase tracking-wider text-zinc-300 flex items-center gap-1.5">
-                  <TerminalIcon className="w-3.5 h-3.5 text-[#00f0ff]" />
+                  <TerminalIcon className="w-3.5 h-3.5 text-[#bcfc25]" />
                   In-Game Client Hostname
                 </span>
                 <span className="text-[10px] font-mono text-zinc-500">1-Click Copy</span>
               </div>
 
               {/* Primary Hostname */}
-              <div className="flex items-center justify-between p-3 rounded-xl bg-[#07090e] border border-white/10 hover:border-[#00f0ff]/50 transition-all group">
+              <div className="flex items-center justify-between p-3 rounded-xl bg-[#07090e] border border-white/10 hover:border-[#bcfc25]/50 transition-all group">
                 <div className="flex items-center gap-2.5 overflow-hidden">
                   <div className="w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
                   <code className="text-xs sm:text-sm font-mono text-white truncate">
@@ -539,7 +539,7 @@ export default function PingTestMap() {
                 </div>
                 <button
                   onClick={() => handleCopy(selectedNode.hostname)}
-                  className="p-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 text-zinc-400 hover:text-[#00f0ff] transition-colors cursor-pointer"
+                  className="p-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 text-zinc-400 hover:text-[#bcfc25] transition-colors cursor-pointer"
                   title="Copy hostname"
                 >
                   {copied && activeHost === selectedNode.hostname ? (
@@ -552,16 +552,16 @@ export default function PingTestMap() {
 
               {/* Secondary Hostname if Delhi (Nova & Ora) */}
               {selectedNode.secondaryHostname && (
-                <div className="flex items-center justify-between p-3 rounded-xl bg-[#07090e] border border-white/10 hover:border-[#00f0ff]/50 transition-all group">
+                <div className="flex items-center justify-between p-3 rounded-xl bg-[#07090e] border border-white/10 hover:border-[#bcfc25]/50 transition-all group">
                   <div className="flex items-center gap-2.5 overflow-hidden">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400 shrink-0" />
+                    <div className="w-2 h-2 rounded-full bg-[#bcfc25] shrink-0" />
                     <code className="text-xs sm:text-sm font-mono text-white truncate">
                       {selectedNode.secondaryHostname}
                     </code>
                   </div>
                   <button
                     onClick={() => handleCopy(selectedNode.secondaryHostname!)}
-                    className="p-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 text-zinc-400 hover:text-[#00f0ff] transition-colors cursor-pointer"
+                    className="p-1.5 rounded-lg bg-[#0b0e14] hover:bg-[#121824] border border-white/10 text-zinc-400 hover:text-[#bcfc25] transition-colors cursor-pointer"
                     title="Copy secondary hostname"
                   >
                     {copied && activeHost === selectedNode.secondaryHostname ? (
@@ -585,7 +585,7 @@ export default function PingTestMap() {
                 </div>
                 <div className="flex items-center justify-between py-1">
                   <span className="text-zinc-500">Active Clusters:</span>
-                  <span className="text-[#00f0ff] font-medium">{selectedNode.activeNodes.join(", ")}</span>
+                  <span className="text-[#bcfc25] font-medium">{selectedNode.activeNodes.join(", ")}</span>
                 </div>
               </div>
             </div>

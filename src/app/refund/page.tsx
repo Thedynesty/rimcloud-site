@@ -27,7 +27,7 @@ export default function RefundPolicyPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[400px] h-[300px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
@@ -35,7 +35,7 @@ export default function RefundPolicyPage() {
         <div>
           <Link
             href="/policies"
-            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors group"
+            className="inline-flex items-center gap-2 text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors group"
           >
             <ArrowLeft className="w-3.5 h-3.5 transition-transform group-hover:-translate-x-1" />
             <span>Back to Policies Overview</span>
@@ -44,16 +44,16 @@ export default function RefundPolicyPage() {
 
         {/* Header Section */}
         <header className="space-y-4 border-b border-white/10 pb-8">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <CreditCard className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <CreditCard className="w-3.5 h-3.5 text-[#bcfc25]" />
             Billing & Customer Protection
           </div>
           <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-            Rim Cloud — <span className="text-[#00f0ff] cyan-text-glow">Refund Policy</span>
+            Rim Cloud — <span className="text-[#bcfc25] cyan-text-glow">Refund Policy</span>
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
             <span className="flex items-center gap-1.5">
-              <Clock className="w-3.5 h-3.5 text-[#00f0ff]" />
+              <Clock className="w-3.5 h-3.5 text-[#bcfc25]" />
               <strong>Last Updated:</strong> September 6, 2026
             </span>
             <span className="text-zinc-700">•</span>
@@ -73,7 +73,7 @@ export default function RefundPolicyPage() {
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-                <span className="text-[#00f0ff] font-mono text-lg">01.</span>
+                <span className="text-[#bcfc25] font-mono text-lg">01.</span>
                 24-Hour Refund Guarantee
               </h2>
               <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-400 shrink-0">
@@ -86,11 +86,13 @@ export default function RefundPolicyPage() {
             <p>
               A refund request must be submitted within <strong className="text-white">24 hours of the initial payment</strong>.
             </p>
-            <div className="p-4 rounded-xl bg-[#07090e] border border-cyan-500/20 text-xs font-mono text-cyan-300 flex items-start gap-3">
-              <Clock className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
-              <div>
-                <strong>Timing Calculation:</strong> The 24-hour period begins from the time the payment is successfully completed, not from the time the customer first uses the service.
-              </div>
+            <div className="p-4 rounded-xl bg-[#07090e] border border-[#bcfc25]/20 text-xs font-mono text-[#bcfc25] flex items-start gap-3">
+              <ShieldCheck className="w-4 h-4 shrink-0 mt-0.5" />
+              <span>
+                <strong>Fraud Prevention:</strong> Attempts to exploit refunds
+                via rapid chargebacks or fraudulent transactions will result
+                in permanent blacklisting across the Rim Cloud node network.
+              </span>
             </div>
             <p className="text-zinc-400 text-sm">
               After the 24-hour period has expired, the purchase will generally become <strong className="text-white">non-refundable</strong>, except where required by applicable law or where Rim Cloud determines that a refund is appropriate due to a verified service-side issue.
@@ -100,7 +102,7 @@ export default function RefundPolicyPage() {
           {/* Section 2 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">02.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">02.</span>
               Eligible Services
             </h2>
             <p>The 24-hour refund policy may apply to the following services:</p>
@@ -133,7 +135,7 @@ export default function RefundPolicyPage() {
           {/* Section 3 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">03.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">03.</span>
               Refund Conditions
             </h2>
             <p>To qualify for a refund, all of the following conditions must be met:</p>
@@ -145,11 +147,11 @@ export default function RefundPolicyPage() {
               <li>The customer account is in good standing.</li>
               <li>
                 The customer has not violated Rim Cloud&apos;s{" "}
-                <Link href="/terms" className="text-[#00f0ff] underline hover:text-white">
+                <Link href="/terms" className="text-[#bcfc25] underline hover:text-white">
                   Terms of Service
                 </Link>{" "}
                 or{" "}
-                <Link href="/aup" className="text-[#00f0ff] underline hover:text-white">
+                <Link href="/aup" className="text-[#bcfc25] underline hover:text-white">
                   Acceptable Use Policy
                 </Link>.
               </li>
@@ -165,7 +167,7 @@ export default function RefundPolicyPage() {
           {/* Section 4 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">04.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">04.</span>
               Technical Problems
             </h2>
             <p>
@@ -192,7 +194,7 @@ export default function RefundPolicyPage() {
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-                <span className="text-[#00f0ff] font-mono text-lg">05.</span>
+                <span className="text-[#bcfc25] font-mono text-lg">05.</span>
                 Non-Refundable Services and Purchases
               </h2>
               <span className="px-2.5 py-0.5 rounded-full bg-red-500/10 border border-red-500/30 text-xs font-mono text-red-400 shrink-0">
@@ -236,7 +238,7 @@ export default function RefundPolicyPage() {
           {/* Section 6 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">06.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">06.</span>
               Renewals and Recurring Payments
             </h2>
             <p>
@@ -253,7 +255,7 @@ export default function RefundPolicyPage() {
           {/* Section 7 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">07.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">07.</span>
               Promotional and Discounted Services
             </h2>
             <p>
@@ -316,9 +318,9 @@ export default function RefundPolicyPage() {
           </section>
 
           {/* Section 9 */}
-          <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#00f0ff]/30 space-y-4 shadow-cyan-sm">
+          <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#bcfc25]/30 space-y-4 shadow-cyan-sm">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">09.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">09.</span>
               How to Request a Refund
             </h2>
             <p>
@@ -339,10 +341,10 @@ export default function RefundPolicyPage() {
             </p>
             <div className="pt-2">
               <a
-                href="https://billing.rimcloud.site/submitticket.php"
+                href="https://billing.rimcloud.in/submitticket.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors shadow-cyan-sm"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors shadow-cyan-sm"
               >
                 <span>Open Refund Ticket via Billing Portal</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -353,7 +355,7 @@ export default function RefundPolicyPage() {
           {/* Section 10 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">10.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">10.</span>
               Refund Processing
             </h2>
             <p>
@@ -384,7 +386,7 @@ export default function RefundPolicyPage() {
           {/* Section 11 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">11.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">11.</span>
               Service Cancellation
             </h2>
             <p>
@@ -396,7 +398,7 @@ export default function RefundPolicyPage() {
             <div className="pt-1">
               <Link
                 href="/cancellation"
-                className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:underline"
+                className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:underline"
               >
                 <span>Read our full Cancellation Policy (Immediate vs End-of-Term) →</span>
               </Link>
@@ -435,7 +437,7 @@ export default function RefundPolicyPage() {
           {/* Section 13 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-4 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">13.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">13.</span>
               Policy Changes
             </h2>
             <p>
@@ -449,7 +451,7 @@ export default function RefundPolicyPage() {
           {/* Section 14 */}
           <section className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] space-y-6 hover:border-white/20 transition-colors">
             <h2 className="text-xl sm:text-2xl font-bold text-white flex items-center gap-3">
-              <span className="text-[#00f0ff] font-mono text-lg">14.</span>
+              <span className="text-[#bcfc25] font-mono text-lg">14.</span>
               Contact Information
             </h2>
             <p>
@@ -461,23 +463,23 @@ export default function RefundPolicyPage() {
               <div className="text-zinc-400 pt-1">
                 Client Portal:{" "}
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#00f0ff] underline hover:text-white"
+                  className="text-[#bcfc25] underline hover:text-white"
                 >
-                  https://billing.rimcloud.site
+                  https://billing.rimcloud.in/
                 </a>
               </div>
               <div className="text-zinc-400">
                 Support Tickets:{" "}
                 <a
-                  href="https://billing.rimcloud.site/submitticket.php"
+                  href="https://billing.rimcloud.in/submitticket.php"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#00f0ff] underline hover:text-white"
+                  className="text-[#bcfc25] underline hover:text-white"
                 >
-                  https://billing.rimcloud.site/submitticket.php
+                  https://billing.rimcloud.in/submitticket.php
                 </a>
               </div>
               <div className="text-zinc-400">
@@ -487,7 +489,7 @@ export default function RefundPolicyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Join our Discord community"
-                  className="text-[#00f0ff] underline hover:text-white"
+                  className="text-[#bcfc25] underline hover:text-white"
                 >
                   https://discord.gg/TpYMknnHsX
                 </a>
@@ -500,23 +502,23 @@ export default function RefundPolicyPage() {
         <div className="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link
             href="/cancellation"
-            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/50 transition-colors group"
+            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/50 transition-colors group"
           >
-            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#00f0ff]">Related Policy</div>
+            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#bcfc25]">Related Policy</div>
             <div className="text-sm font-bold text-white mt-1">Cancellation Policy →</div>
           </Link>
           <Link
             href="/terms"
-            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/50 transition-colors group"
+            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/50 transition-colors group"
           >
-            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#00f0ff]">Full Agreement</div>
+            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#bcfc25]">Full Agreement</div>
             <div className="text-sm font-bold text-white mt-1">Terms of Service →</div>
           </Link>
           <Link
             href="/policies"
-            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/50 transition-colors group"
+            className="p-4 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/50 transition-colors group"
           >
-            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#00f0ff]">Unified Hub</div>
+            <div className="text-xs font-mono text-zinc-400 group-hover:text-[#bcfc25]">Unified Hub</div>
             <div className="text-sm font-bold text-white mt-1">All Policies & Rules →</div>
           </Link>
         </div>

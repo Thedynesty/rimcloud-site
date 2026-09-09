@@ -131,18 +131,18 @@ export default function RamCalculator() {
   return (
     <section className="relative py-20 bg-[#07090e] border-t border-white/[0.06] overflow-hidden">
       {/* Background glow effects */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[300px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[300px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-[500px] h-[250px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/40 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <Sliders className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/40 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <Sliders className="w-3.5 h-3.5 text-[#bcfc25]" />
             Smart Hardware Diagnostic Recommender
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-            Minecraft Specs & <span className="text-[#00f0ff] cyan-text-glow">RAM Calculator</span>
+            Minecraft Specs & <span className="text-[#bcfc25] cyan-text-glow">RAM Calculator</span>
           </h2>
           <p className="text-base sm:text-lg text-zinc-400">
             Dynamically calculate the precise compute and memory allocation your server demands for guaranteed 20.0 TPS stability.
@@ -154,28 +154,28 @@ export default function RamCalculator() {
             <button
               type="button"
               onClick={() => applyPreset("paper", 12, "light", 10)}
-              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#00f0ff]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
+              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#bcfc25]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
             >
               Friends SMP (12p)
             </button>
             <button
               type="button"
               onClick={() => applyPreset("forge", 25, "heavy", 12)}
-              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#00f0ff]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
+              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#bcfc25]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
             >
               Modded Realm (25p)
             </button>
             <button
               type="button"
               onClick={() => applyPreset("paper", 75, "medium", 14)}
-              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#00f0ff]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
+              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-white/10 hover:border-[#bcfc25]/40 text-xs font-mono text-zinc-300 hover:text-white transition-all cursor-pointer"
             >
               Public Community (75p)
             </button>
             <button
               type="button"
               onClick={() => applyPreset("paper", 150, "extreme", 18)}
-              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] hover:bg-[#00f0ff]/10 transition-all cursor-pointer"
+              className="px-3 py-1 rounded-lg bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] hover:bg-[#bcfc25]/10 transition-all cursor-pointer"
             >
               Megaserver (150p+)
             </button>
@@ -192,10 +192,10 @@ export default function RamCalculator() {
             <div className="space-y-3">
               <label className="flex items-center justify-between text-xs font-mono uppercase tracking-wider text-zinc-300">
                 <span className="flex items-center gap-2">
-                  <Server className="w-4 h-4 text-[#00f0ff]" />
+                  <Server className="w-4 h-4 text-[#bcfc25]" />
                   1. Server Software Platform
                 </span>
-                <span className="text-[#00f0ff] font-semibold">
+                <span className="text-[#bcfc25] font-semibold">
                   Base: {selectedSoftware.baseRam} GB
                 </span>
               </label>
@@ -210,12 +210,12 @@ export default function RamCalculator() {
                       onClick={() => setSelectedSoftware(sw)}
                       className={`text-left p-3.5 rounded-xl border transition-all cursor-pointer ${
                         isSelected
-                          ? "bg-[#0b0e14] border-[#00f0ff] shadow-cyan-sm scale-[1.01]"
+                          ? "bg-[#0b0e14] border-[#bcfc25] shadow-cyan-sm scale-[1.01]"
                           : "bg-[#07090e]/80 border-white/10 hover:border-white/20 hover:bg-[#0b0e14]"
                       }`}
                     >
                       <div className="flex items-center justify-between">
-                        <span className={`font-bold text-sm ${isSelected ? "text-[#00f0ff]" : "text-white"}`}>
+                        <span className={`font-bold text-sm ${isSelected ? "text-[#bcfc25]" : "text-white"}`}>
                           {sw.name}
                         </span>
                         <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-white/[0.05] text-zinc-400">
@@ -233,12 +233,12 @@ export default function RamCalculator() {
             <div className="space-y-3 pt-2">
               <div className="flex items-center justify-between">
                 <label className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-zinc-300">
-                  <Users className="w-4 h-4 text-[#00f0ff]" />
+                  <Users className="w-4 h-4 text-[#bcfc25]" />
                   2. Peak Concurrent Players
                 </label>
-                <div className="flex items-baseline gap-1.5 px-3 py-1 rounded-lg bg-[#07090e] border border-[#00f0ff]/30">
+                <div className="flex items-baseline gap-1.5 px-3 py-1 rounded-lg bg-[#07090e] border border-[#bcfc25]/30">
                   <span className="text-lg font-black font-mono text-white">{playerCount}</span>
-                  <span className="text-xs font-mono text-[#00f0ff]">
+                  <span className="text-xs font-mono text-[#bcfc25]">
                     {playerCount >= 150 ? "150+ Players" : "Players"}
                   </span>
                 </div>
@@ -252,7 +252,7 @@ export default function RamCalculator() {
                   step="1"
                   value={playerCount}
                   onChange={(e) => setPlayerCount(parseInt(e.target.value, 10))}
-                  className="w-full h-2 rounded-lg bg-zinc-800 appearance-none cursor-pointer accent-[#00f0ff]"
+                  className="w-full h-2 rounded-lg bg-zinc-800 appearance-none cursor-pointer accent-[#bcfc25]"
                 />
                 <div className="flex justify-between text-[11px] font-mono text-zinc-500">
                   <span>1 Player (Solo / Dev)</span>
@@ -267,7 +267,7 @@ export default function RamCalculator() {
             <div className="space-y-3 pt-2">
               <label className="flex items-center justify-between text-xs font-mono uppercase tracking-wider text-zinc-300">
                 <span className="flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-[#00f0ff]" />
+                  <Layers className="w-4 h-4 text-[#bcfc25]" />
                   3. Plugins & Modpacks Complexity
                 </span>
                 <span className="text-emerald-400 font-semibold font-mono">
@@ -285,11 +285,11 @@ export default function RamCalculator() {
                       onClick={() => setSelectedModTier(tier)}
                       className={`p-2.5 rounded-xl border text-center transition-all cursor-pointer ${
                         isSelected
-                          ? "bg-[#0b0e14] border-[#00f0ff] shadow-cyan-sm"
+                          ? "bg-[#0b0e14] border-[#bcfc25] shadow-cyan-sm"
                           : "bg-[#07090e]/80 border-white/10 hover:border-white/20"
                       }`}
                     >
-                      <span className={`block text-xs font-bold ${isSelected ? "text-[#00f0ff]" : "text-white"}`}>
+                      <span className={`block text-xs font-bold ${isSelected ? "text-[#bcfc25]" : "text-white"}`}>
                         {tier.name}
                       </span>
                       <span className="block text-[10px] font-mono text-zinc-400 mt-0.5">
@@ -308,12 +308,12 @@ export default function RamCalculator() {
             <div className="space-y-3 pt-2">
               <div className="flex items-center justify-between">
                 <label className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-zinc-300">
-                  <Eye className="w-4 h-4 text-[#00f0ff]" />
+                  <Eye className="w-4 h-4 text-[#bcfc25]" />
                   4. View & Simulation Distance
                 </label>
-                <div className="flex items-baseline gap-1.5 px-3 py-1 rounded-lg bg-[#07090e] border border-[#00f0ff]/30">
+                <div className="flex items-baseline gap-1.5 px-3 py-1 rounded-lg bg-[#07090e] border border-[#bcfc25]/30">
                   <span className="text-lg font-black font-mono text-white">{viewDistance}</span>
-                  <span className="text-xs font-mono text-[#00f0ff]">
+                  <span className="text-xs font-mono text-[#bcfc25]">
                     {viewDistance >= 24 ? "24+ Chunks" : "Chunks"}
                   </span>
                   <span className="text-[10px] font-mono text-zinc-400 ml-1">
@@ -330,7 +330,7 @@ export default function RamCalculator() {
                   step="1"
                   value={viewDistance}
                   onChange={(e) => setViewDistance(parseInt(e.target.value, 10))}
-                  className="w-full h-2 rounded-lg bg-zinc-800 appearance-none cursor-pointer accent-[#00f0ff]"
+                  className="w-full h-2 rounded-lg bg-zinc-800 appearance-none cursor-pointer accent-[#bcfc25]"
                 />
                 <div className="flex justify-between text-[11px] font-mono text-zinc-500">
                   <span>6 Chunks (Standard)</span>
@@ -346,14 +346,14 @@ export default function RamCalculator() {
           {/* RIGHT: LIVE OUTPUT DISPLAY CARD (5 COLS) */}
           {/* ========================================================================= */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="glass-card rounded-2xl p-6 sm:p-8 border-2 border-[#00f0ff]/40 shadow-cyan-md relative overflow-hidden">
+            <div className="glass-card rounded-2xl p-6 sm:p-8 border-2 border-[#bcfc25]/40 shadow-cyan-md relative overflow-hidden">
               {/* Subtle top cyan line */}
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00f0ff] to-transparent" />
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#bcfc25] to-transparent" />
 
               <div className="space-y-6">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#00f0ff] flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5 text-[#00f0ff]" />
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#bcfc25] flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-[#bcfc25]" />
                     Engine Telemetry Recommendation
                   </span>
                   <span className="px-2.5 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-[10px] font-mono text-emerald-400 font-semibold">
@@ -370,7 +370,7 @@ export default function RamCalculator() {
                     <span className="text-6xl sm:text-7xl font-black font-mono tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-100 to-white">
                       {finalRam}
                     </span>
-                    <span className="text-2xl sm:text-3xl font-bold font-mono text-[#00f0ff]">
+                    <span className="text-2xl sm:text-3xl font-bold font-mono text-[#bcfc25]">
                       GB RAM
                     </span>
                   </div>
@@ -390,7 +390,7 @@ export default function RamCalculator() {
                 <div className="space-y-3 pt-1">
                   <div className="p-3.5 rounded-xl bg-[#07090e] border border-white/10 space-y-1">
                     <div className="flex items-center gap-2 text-xs font-mono text-white font-bold">
-                      <Cpu className="w-4 h-4 text-[#00f0ff]" />
+                      <Cpu className="w-4 h-4 text-[#bcfc25]" />
                       <span>High-Frequency Dedicated Compute</span>
                     </div>
                     <p className="text-xs text-zinc-400 font-mono">
@@ -400,7 +400,7 @@ export default function RamCalculator() {
 
                   <div className="p-3.5 rounded-xl bg-[#07090e] border border-white/10 space-y-1">
                     <div className="flex items-center gap-2 text-xs font-mono text-white font-bold">
-                      <HardDrive className="w-4 h-4 text-[#00f0ff]" />
+                      <HardDrive className="w-4 h-4 text-[#bcfc25]" />
                       <span>Ultra-Fast Gen4 NVMe Storage</span>
                     </div>
                     <p className="text-xs text-zinc-400 font-mono">
@@ -416,7 +416,7 @@ export default function RamCalculator() {
                     <span>Targeting smooth 20 TPS for ~{playerCount} concurrent players</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-[#bcfc25] shrink-0 mt-0.5" />
                     <span>Optimized runtime configuration for {selectedSoftware.name}</span>
                   </div>
                   <div className="flex items-start gap-2">
@@ -428,10 +428,10 @@ export default function RamCalculator() {
                 {/* Action CTA Button */}
                 <div className="pt-4">
                   <a
-                    href="https://billing.rimcloud.site"
+                    href="https://billing.rimcloud.in/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl text-base font-bold text-black bg-[#00f0ff] hover:bg-[#33f3ff] shadow-cyan-md hover:shadow-cyan-lg transition-all duration-200 transform hover:-translate-y-0.5 group cursor-pointer"
+                    className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl text-base font-bold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] shadow-[0_0_20px_rgba(188,252,37,0.25)] hover:shadow-[0_0_30px_rgba(188,252,37,0.45)] transition-all duration-200 transform hover:-translate-y-0.5 group cursor-pointer"
                   >
                     <span>Deploy {finalRam}GB Server on Storefront</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

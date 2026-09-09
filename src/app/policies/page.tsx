@@ -20,17 +20,17 @@ export default function PoliciesPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Background glow effects */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <ShieldCheck className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <ShieldCheck className="w-3.5 h-3.5 text-[#bcfc25]" />
             Legal & Governance
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight">
-            Policies & <span className="text-[#00f0ff] cyan-text-glow">Terms</span>
+            Policies & <span className="text-[#bcfc25] cyan-text-glow">Terms</span>
           </h1>
           <p className="text-base sm:text-lg text-zinc-300">
             Official operational policies, customer agreements, and legal documentation for Rim Cloud hosting services.
@@ -46,11 +46,11 @@ export default function PoliciesPage() {
             onClick={() => setActiveTab("tos")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
               activeTab === "tos"
-                ? "bg-[#0b0e14] border-2 border-[#00f0ff] text-white shadow-cyan-sm"
+                ? "bg-[#0b0e14] border-2 border-[#bcfc25] text-white shadow-cyan-sm"
                 : "bg-[#0b0e14]/60 border border-white/10 text-zinc-400 hover:text-white hover:border-white/20"
             }`}
           >
-            <FileText className="w-4 h-4 text-[#00f0ff]" />
+            <FileText className="w-4 h-4 text-[#bcfc25]" />
             <span>Terms of Service</span>
           </button>
 
@@ -58,11 +58,11 @@ export default function PoliciesPage() {
             onClick={() => setActiveTab("privacy")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
               activeTab === "privacy"
-                ? "bg-[#0b0e14] border-2 border-[#00f0ff] text-white shadow-cyan-sm"
+                ? "bg-[#0b0e14] border-2 border-[#bcfc25] text-white shadow-cyan-sm"
                 : "bg-[#0b0e14]/60 border border-white/10 text-zinc-400 hover:text-white hover:border-white/20"
             }`}
           >
-            <Lock className="w-4 h-4 text-[#00f0ff]" />
+            <Lock className="w-4 h-4 text-[#bcfc25]" />
             <span>Privacy Policy</span>
           </button>
 
@@ -70,7 +70,7 @@ export default function PoliciesPage() {
             onClick={() => setActiveTab("refund")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
               activeTab === "refund"
-                ? "bg-[#0b0e14] border-2 border-[#00f0ff] text-white shadow-cyan-sm"
+                ? "bg-[#0b0e14] border-2 border-[#bcfc25] text-white shadow-cyan-sm"
                 : "bg-[#0b0e14]/60 border border-white/10 text-zinc-400 hover:text-white hover:border-white/20"
             }`}
           >
@@ -82,7 +82,7 @@ export default function PoliciesPage() {
             onClick={() => setActiveTab("aup")}
             className={`flex items-center gap-2 px-5 py-3 rounded-xl font-medium text-sm transition-all duration-200 ${
               activeTab === "aup"
-                ? "bg-[#0b0e14] border-2 border-[#00f0ff] text-white shadow-cyan-sm"
+                ? "bg-[#0b0e14] border-2 border-[#bcfc25] text-white shadow-cyan-sm"
                 : "bg-[#0b0e14]/60 border border-white/10 text-zinc-400 hover:text-white hover:border-white/20"
             }`}
           >
@@ -101,13 +101,13 @@ export default function PoliciesPage() {
                   <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                     Rim Cloud Terms of Service
                   </h2>
-                  <p className="text-xs font-mono text-[#00f0ff] mt-1">
+                  <p className="text-xs font-mono text-[#bcfc25] mt-1">
                     Agreement between Client and Rim Cloud (&quot;RimCloud&quot;)
                   </p>
                 </div>
                 <Link
                   href="/terms"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors shrink-0 shadow-cyan-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors shrink-0 shadow-cyan-sm"
                 >
                   <span>Full Terms of Service Page</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -118,7 +118,7 @@ export default function PoliciesPage() {
                 <h3 className="text-lg font-bold text-white">1. Agreement to Terms</h3>
                 <p>
                   By creating an account, accessing the storefront at{" "}
-                  <code className="text-[#00f0ff] font-mono">https://billing.rimcloud.site</code>,
+                  <code className="text-[#bcfc25] font-mono">https://billing.rimcloud.in/</code>,
                   or utilizing any Rim Cloud game server or compute instance, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must terminate your use immediately.
                 </p>
 
@@ -148,13 +148,13 @@ export default function PoliciesPage() {
                   <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                     Privacy & Data Governance Policy
                   </h2>
-                  <p className="text-xs font-mono text-[#00f0ff] mt-1">
+                  <p className="text-xs font-mono text-[#bcfc25] mt-1">
                     Commitment to Confidentiality, Encryption & Data Integrity
                   </p>
                 </div>
                 <Link
                   href="/privacy"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors shrink-0 shadow-cyan-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors shrink-0 shadow-cyan-sm"
                 >
                   <span>Full Privacy Policy Page</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -179,7 +179,7 @@ export default function PoliciesPage() {
                 <div className="pt-2">
                   <Link
                     href="/privacy"
-                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:underline"
                   >
                     <span>Read all 13 sections in the dedicated Privacy Policy →</span>
                   </Link>
@@ -207,7 +207,7 @@ export default function PoliciesPage() {
                 </div>
                 <Link
                   href="/refund"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors shrink-0 shadow-cyan-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors shrink-0 shadow-cyan-sm"
                 >
                   <span>Full Refund Page</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -232,19 +232,19 @@ export default function PoliciesPage() {
                 <p>
                   Simply open a ticket under the Billing Department at{" "}
                   <a
-                    href="https://billing.rimcloud.site/submitticket.php"
+                    href="https://billing.rimcloud.in/submitticket.php"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#00f0ff] underline hover:text-white"
+                    className="text-[#bcfc25] underline hover:text-white"
                   >
-                    https://billing.rimcloud.site/submitticket.php
+                    https://billing.rimcloud.in/submitticket.php
                   </a>{" "}
                   requesting cancellation under the 24-Hour Refund Policy. Approved refunds are processed back to the original payment method within 3 to 5 business days.
                 </p>
                 <div className="pt-2 flex flex-col sm:flex-row sm:items-center gap-4">
                   <Link
                     href="/refund"
-                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:underline"
                   >
                     <span>Read all 14 sections in the dedicated Refund Policy →</span>
                   </Link>
@@ -274,7 +274,7 @@ export default function PoliciesPage() {
                 </div>
                 <Link
                   href="/aup"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-colors shrink-0 shadow-cyan-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-colors shrink-0 shadow-cyan-sm"
                 >
                   <span>Full AUP Page</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -313,7 +313,7 @@ export default function PoliciesPage() {
                 <div className="pt-2">
                   <Link
                     href="/aup"
-                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:underline"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:underline"
                   >
                     <span>Read all 10 sections in the dedicated Acceptable Use Policy →</span>
                   </Link>
@@ -333,16 +333,16 @@ export default function PoliciesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Join our Discord community"
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] hover:text-white hover:border-[#00f0ff] transition-colors"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] hover:text-white hover:border-[#bcfc25] transition-colors"
               >
                 <DiscordIcon className="w-3.5 h-3.5" />
                 <span>Discord Community</span>
               </a>
               <a
-                href="https://billing.rimcloud.site/submitticket.php"
+                href="https://billing.rimcloud.in/submitticket.php"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] hover:text-white hover:border-[#00f0ff] transition-colors"
+                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] hover:text-white hover:border-[#bcfc25] transition-colors"
               >
                 <span>Contact Compliance Helpdesk</span>
                 <ExternalLink className="w-3.5 h-3.5" />

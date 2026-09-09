@@ -10,14 +10,20 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Rim Cloud | Next-Gen Game & Cloud Server Hosting",
+  metadataBase: new URL("https://rimcloud.site"),
+  title: "Rim Cloud | High-Performance Game, Bot & Web Hosting",
   description:
-    "Deploy high-frequency game servers and cloud compute instances with enterprise DDoS filtering, automated Pterodactyl orchestration, and 99.9% uptime.",
+    "Ultra-low latency Minecraft servers, Discord bot hosting, and high-performance cloud solutions powered by Rim Cloud.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   keywords: [
     "Rim Cloud",
     "RimCloud",
     "Game Server Hosting",
     "Minecraft Hosting",
+    "Discord Bot Hosting",
     "Cloud VPS",
     "Pterodactyl",
     "Low Latency Server",
@@ -25,18 +31,20 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Rim Cloud Infrastructure Team" }],
   openGraph: {
-    title: "Rim Cloud | High-Performance Game & Cloud Compute Hosting",
+    title: "Rim Cloud | High-Performance Game, Bot & Web Hosting",
     description:
-      "Enterprise Multi-Core Architecture, High-Frequency Dedicated Compute, and Ultra-Fast Gen4 NVMe Storage.",
+      "Ultra-low latency Minecraft servers, Discord bot hosting, and high-performance cloud solutions powered by Rim Cloud.",
     url: "https://rimcloud.site",
     siteName: "Rim Cloud",
+    images: [{ url: "/logo-full.png", width: 1920, height: 570, alt: "Rim Cloud" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rim Cloud | Next-Gen Game & Cloud Server Hosting",
+    title: "Rim Cloud | High-Performance Game, Bot & Web Hosting",
     description:
-      "Ultra low-latency game servers and high-frequency cloud compute instances.",
+      "Ultra-low latency Minecraft servers, Discord bot hosting, and high-performance cloud solutions powered by Rim Cloud.",
+    images: ["/logo-full.png"],
   },
 };
 
@@ -47,7 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className="min-h-screen flex flex-col bg-[#07090e] text-[#f3f4f6] selection:bg-[#00f0ff] selection:text-black">
+      <body className="min-h-screen flex flex-col bg-[#07090e] text-[#f3f4f6] selection:bg-[#bcfc25] selection:text-black">
         <ThemeProvider>
           <SpiderManEasterEgg />
           <Navbar />

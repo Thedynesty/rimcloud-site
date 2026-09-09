@@ -16,7 +16,7 @@ export default function ThemeToggle() {
       className={`relative inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border transition-all duration-300 select-none group focus:outline-none ${
         isSpiderman
           ? "bg-[#18090e] border-[#e21b24]/60 shadow-[0_0_15px_rgba(226,27,36,0.45)] hover:border-[#ff2a36] hover:shadow-[0_0_20px_rgba(226,27,36,0.7)] text-white"
-          : "bg-[#0b0e14] border-white/10 hover:border-[#00f0ff]/50 shadow-cyan-sm hover:shadow-cyan-md text-zinc-300 hover:text-[#00f0ff]"
+          : "bg-[#0b0e14] border-white/10 hover:border-[#bcfc25]/50 shadow-[0_0_15px_rgba(188,252,37,0.2)] hover:shadow-[0_0_20px_rgba(188,252,37,0.35)] text-zinc-300 hover:text-[#bcfc25]"
       }`}
       aria-label={isSpiderman ? "Deactivate Spider-Man Protocol" : "Activate Spider-Man Protocol"}
       title={isSpiderman ? "Switch to Classic Mode" : "Activate Spider-Man Protocol"}
@@ -30,7 +30,7 @@ export default function ThemeToggle() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className={`transition-transform duration-300 group-hover:scale-110 ${
-            isSpiderman ? "text-[#ff2a36]" : "text-zinc-400 group-hover:text-[#00f0ff]"
+            isSpiderman ? "text-[#ff2a36]" : "text-zinc-400 group-hover:text-[#bcfc25]"
           }`}
         >
           {/* Mask Contour */}
@@ -53,13 +53,13 @@ export default function ThemeToggle() {
           {/* Eyes Left & Right */}
           <path
             d="M8.2 9.5C6.8 11.5 7.2 14 9.5 14C10.5 14 11 13 11 11.5C10.5 10 9.5 9.5 8.2 9.5Z"
-            fill={isSpiderman ? "#ffffff" : "#00f0ff"}
+            fill={isSpiderman ? "#ffffff" : "#bcfc25"}
             stroke="currentColor"
             strokeWidth="0.8"
           />
           <path
             d="M15.8 9.5C17.2 11.5 16.8 14 14.5 14C13.5 14 13 13 13 11.5C13.5 10 14.5 9.5 15.8 9.5Z"
-            fill={isSpiderman ? "#ffffff" : "#00f0ff"}
+            fill={isSpiderman ? "#ffffff" : "#bcfc25"}
             stroke="currentColor"
             strokeWidth="0.8"
           />
@@ -72,7 +72,7 @@ export default function ThemeToggle() {
           className={`w-1.5 h-1.5 rounded-full transition-colors ${
             isSpiderman
               ? "bg-[#ff2a36] shadow-[0_0_8px_#ff2a36] animate-pulse"
-              : "bg-[#00f0ff] shadow-[0_0_6px_#00f0ff]"
+              : "bg-[#bcfc25] shadow-[0_0_8px_rgba(188,252,37,0.6)]"
           }`}
         />
         <span className="hidden sm:inline">

@@ -1,25 +1,28 @@
 import React from "react";
 import Link from "next/link";
-import { Terminal, Shield, ExternalLink, Activity, Server, Cpu, HardDrive } from "lucide-react";
+import Image from "next/image";
+import Script from "next/script";
+import { Shield, ExternalLink, Activity, Server, Cpu, HardDrive } from "lucide-react";
 import DiscordIcon from "@/components/DiscordIcon";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#07090e] border-t border-[#00f0ff]/15 pt-16 pb-12 overflow-hidden">
+    <footer className="relative bg-[#07090e] border-t border-[#bcfc25]/15 pt-16 pb-12 overflow-hidden">
       {/* Background glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-b from-[#00f0ff]/5 to-transparent pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-24 bg-gradient-to-b from-[#bcfc25]/5 to-transparent pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/[0.08]">
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#0b0e14] border border-[#00f0ff]/40 shadow-cyan-sm">
-                <Terminal className="w-5 h-5 text-[#00f0ff]" />
-              </div>
-              <span className="text-xl font-black tracking-tight text-white">
-                Rim<span className="text-[#00f0ff]">Cloud</span>
-              </span>
+            <Link href="/" className="inline-block group">
+              <Image
+                src="/logo-full.png"
+                alt="Rim Cloud"
+                width={180}
+                height={42}
+                className="h-9 w-auto object-contain"
+              />
             </Link>
             <p className="text-sm text-zinc-400 max-w-sm leading-relaxed">
               Engineered for uncompromising performance. Deploy high-frequency game servers and cloud compute instances with enterprise DDoS mitigation, ultra-fast NVMe arrays, and automated orchestration.
@@ -38,23 +41,55 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Join our Discord community"
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] hover:bg-[#00f0ff]/10 hover:border-[#00f0ff] transition-all shadow-cyan-sm group"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] hover:bg-[#bcfc25]/10 hover:border-[#bcfc25] transition-all shadow-[0_0_15px_rgba(188,252,37,0.2)] group"
               >
                 <DiscordIcon className="w-3.5 h-3.5 transition-transform group-hover:scale-110" />
                 <span>Join our Discord</span>
               </a>
+              <a
+                href="https://www.trustpilot.com/review/rimcloud.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Review Rim Cloud on Trustpilot"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0b0e14] border border-[#00b67a]/40 text-xs font-mono text-zinc-300 hover:text-white hover:bg-[#00b67a]/10 hover:border-[#00b67a] hover:shadow-[0_0_15px_rgba(0,182,122,0.25)] transition-all group"
+              >
+                <div className="flex items-center justify-center w-4 h-4 rounded-sm bg-[#00b67a] shrink-0">
+                  <svg className="w-2.5 h-2.5 fill-white" viewBox="0 0 24 24">
+                    <path d="M24 9.625l-9.156-.75L12 0 9.156 8.875 0 9.625l7.031 6.125-2.156 8.875L12 19.875 19.125 24.625l-2.156-8.875z" />
+                  </svg>
+                </div>
+                <span>Review us on <strong className="font-semibold text-[#00b67a] group-hover:text-emerald-400">Trustpilot</strong></span>
+              </a>
+              <div className="inline-flex items-center">
+                <a
+                  href="https://www.dmca.com/Protection/Status.aspx?ID=bd0cb760-847c-4dd9-9ee8-8b7e7104558d"
+                  title="DMCA.com Protection Status"
+                  className="dmca-badge inline-block hover:opacity-85 transition-opacity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-10.png?ID=bd0cb760-847c-4dd9-9ee8-8b7e7104558d"
+                    alt="DMCA.com Protection Status"
+                    className="h-6 w-auto"
+                    loading="lazy"
+                  />
+                </a>
+                <Script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" strategy="lazyOnload" />
+              </div>
             </div>
           </div>
 
           {/* Solutions Column */}
           <div>
-            <h4 className="text-xs uppercase font-mono tracking-widest text-[#00f0ff] font-semibold mb-4">
+            <h4 className="text-xs uppercase font-mono tracking-widest text-[#bcfc25] font-semibold mb-4">
               Infrastructure
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group"
@@ -65,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group"
@@ -76,7 +111,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-400 hover:text-white transition-colors flex items-center gap-1 group"
@@ -98,7 +133,7 @@ export default function Footer() {
 
           {/* Community & Organization Column */}
           <div>
-            <h4 className="text-xs uppercase font-mono tracking-widest text-[#00f0ff] font-semibold mb-4">
+            <h4 className="text-xs uppercase font-mono tracking-widest text-[#bcfc25] font-semibold mb-4">
               Community & Team
             </h4>
             <ul className="space-y-2.5 text-sm">
@@ -108,10 +143,25 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Join our Discord community"
-                  className="text-zinc-300 hover:text-[#00f0ff] transition-colors flex items-center gap-2 group font-medium"
+                  className="text-zinc-300 hover:text-[#bcfc25] transition-colors flex items-center gap-2 group font-medium"
                 >
-                  <DiscordIcon className="w-4 h-4 text-[#00f0ff] group-hover:scale-110 transition-transform shrink-0" />
+                  <DiscordIcon className="w-4 h-4 text-[#bcfc25] group-hover:scale-110 transition-transform shrink-0" />
                   <span>Join our Discord</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.trustpilot.com/review/rimcloud.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-300 hover:text-[#00b67a] transition-colors flex items-center gap-2 group font-medium"
+                >
+                  <div className="flex items-center justify-center w-4 h-4 rounded-sm bg-[#00b67a] shrink-0">
+                    <svg className="w-2.5 h-2.5 fill-white" viewBox="0 0 24 24">
+                      <path d="M24 9.625l-9.156-.75L12 0 9.156 8.875 0 9.625l7.031 6.125-2.156 8.875L12 19.875 19.125 24.625l-2.156-8.875z" />
+                    </svg>
+                  </div>
+                  <span>Trustpilot Reviews</span>
                 </a>
               </li>
               <li>
@@ -126,7 +176,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://billing.rimcloud.site/login"
+                  href="https://panel.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-400 hover:text-white transition-colors"
@@ -136,7 +186,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://billing.rimcloud.site/submitticket.php"
+                  href="https://billing.rimcloud.in/submitticket.php"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-400 hover:text-white transition-colors"
@@ -150,7 +200,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Community Support via Discord"
-                  className="text-xs font-mono text-zinc-400 hover:text-[#00f0ff] transition-colors block"
+                  className="text-xs font-mono text-zinc-400 hover:text-[#bcfc25] transition-colors block"
                 >
                   <span className="text-zinc-500 block text-[10px] uppercase">Community Support:</span>
                   <span className="truncate block">https://discord.gg/TpYMknnHsX</span>
@@ -161,7 +211,7 @@ export default function Footer() {
 
           {/* Legal & Compliance Column */}
           <div>
-            <h4 className="text-xs uppercase font-mono tracking-widest text-[#00f0ff] font-semibold mb-4">
+            <h4 className="text-xs uppercase font-mono tracking-widest text-[#bcfc25] font-semibold mb-4">
               Legal & Policy
             </h4>
             <ul className="space-y-2.5 text-sm">

@@ -34,9 +34,9 @@ export default function AboutPage() {
       role: "Owner",
       focus: "Technical Development & Infrastructure Systems",
       bio: "Leads core technical development, server infrastructure architecture, automated deployment pipelines, and node performance optimization across Rim Cloud's global network.",
-      accentColor: "from-[#00f0ff] to-[#0080ff]",
-      badgeBorder: "border-[#00f0ff]/40",
-      badgeText: "text-[#00f0ff]",
+      accentColor: "from-[#bcfc25] to-[#0080ff]",
+      badgeBorder: "border-[#bcfc25]/40",
+      badgeText: "text-[#bcfc25]",
     },
     {
       name: "Mr.Soul",
@@ -54,7 +54,7 @@ export default function AboutPage() {
       role: "Owner",
       focus: "Technical Workflows & Maintenance",
       bio: "Oversees technical and operational workflows, feature development, system maintenance routines, and telemetry monitoring to keep hosting environments consistently stable.",
-      accentColor: "from-[#00f0ff] to-[#10b981]",
+      accentColor: "from-[#bcfc25] to-[#10b981]",
       badgeBorder: "border-emerald-500/40",
       badgeText: "text-emerald-400",
     },
@@ -78,7 +78,7 @@ export default function AboutPage() {
       description:
         "High-uptime hosting designed to keep bot projects running smoothly. Built with native 24/7 runtime support for Node.js, Python, Java, and Go, coupled with isolated containerized environments.",
       linkText: "Deploy Discord Bot",
-      href: "https://billing.rimcloud.site",
+      href: "https://billing.rimcloud.in/",
       external: true,
       tag: "99.9% Uptime",
     },
@@ -89,7 +89,7 @@ export default function AboutPage() {
       description:
         "Simple and fast hosting for websites, portfolios, and web apps. Benefit from automated SSL certification, one-click installer utilities, resilient DNS routing, and fast global delivery.",
       linkText: "View Web Solutions",
-      href: "https://billing.rimcloud.site",
+      href: "https://billing.rimcloud.in/",
       external: true,
       tag: "Free SSL & CDN",
     },
@@ -108,23 +108,23 @@ export default function AboutPage() {
   return (
     <div className="relative min-h-screen bg-[#07090e] py-16 sm:py-24 overflow-hidden">
       {/* Ambient background glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#00f0ff]/5 blur-[140px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#bcfc25]/5 blur-[140px] rounded-full pointer-events-none" />
       <div className="absolute top-1/3 right-0 w-[450px] h-[350px] bg-[#0080ff]/5 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-[450px] h-[350px] bg-[#00f0ff]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-[450px] h-[350px] bg-[#bcfc25]/5 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-16">
         {/* ========================================================================= */}
         {/* HERO HEADER */}
         {/* ========================================================================= */}
         <header className="text-center max-w-3xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider shadow-cyan-sm">
-            <Building className="w-3.5 h-3.5 text-[#00f0ff]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0b0e14] border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider shadow-[0_0_20px_rgba(188,252,37,0.25)]">
+            <Building className="w-3.5 h-3.5 text-[#bcfc25]" />
             About Rim Cloud
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
             Hosting Built for{" "}
-            <span className="text-[#00f0ff] cyan-text-glow">Your Community</span>
+            <span className="text-[#bcfc25] cyan-text-glow">Your Community</span>
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-300 leading-relaxed">
@@ -133,20 +133,20 @@ export default function AboutPage() {
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <a
-              href="https://billing.rimcloud.site"
+              href="https://billing.rimcloud.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-all shadow-cyan-sm hover:shadow-cyan-md"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-all shadow-cyan-sm hover:shadow-cyan-md"
             >
               <span>Explore Services</span>
               <ExternalLink className="w-4 h-4" />
             </a>
             <Link
               href="/#ping-test"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-zinc-200 hover:text-white bg-[#0b0e14] hover:bg-[#121824] border border-white/10 hover:border-[#00f0ff]/40 transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium text-zinc-200 hover:text-white bg-[#0b0e14] hover:bg-[#121824] border border-white/10 hover:border-[#bcfc25]/40 transition-all"
             >
               <span>Verify Ping & Latency</span>
-              <ArrowRight className="w-4 h-4 text-[#00f0ff]" />
+              <ArrowRight className="w-4 h-4 text-[#bcfc25]" />
             </Link>
           </div>
         </header>
@@ -157,7 +157,7 @@ export default function AboutPage() {
         <section className="space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-white/10 pb-4">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-1">
+              <div className="inline-flex items-center gap-2 text-xs font-mono text-[#bcfc25] uppercase tracking-wider mb-1">
                 <Sparkles className="w-3.5 h-3.5" />
                 Service Portfolio
               </div>
@@ -176,21 +176,21 @@ export default function AboutPage() {
               return (
                 <div
                   key={idx}
-                  className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                  className="p-6 sm:p-8 rounded-2xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/40 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
                 >
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#00f0ff]/5 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#bcfc25]/5 rounded-bl-full pointer-events-none group-hover:scale-110 transition-transform" />
 
                   <div className="space-y-4 relative z-10">
                     <div className="flex items-center justify-between">
-                      <div className="w-12 h-12 rounded-xl bg-[#07090e] border border-white/10 flex items-center justify-center text-xl shadow-inner group-hover:border-[#00f0ff]/40 transition-colors">
+                      <div className="w-12 h-12 rounded-xl bg-[#07090e] border border-white/10 flex items-center justify-center text-xl shadow-inner group-hover:border-[#bcfc25]/40 transition-colors">
                         <span className="text-2xl">{srv.emoji}</span>
                       </div>
-                      <span className="px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/20 text-xs font-mono text-[#00f0ff]">
+                      <span className="px-3 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/20 text-xs font-mono text-[#bcfc25]">
                         {srv.tag}
                       </span>
                     </div>
 
-                    <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2 group-hover:text-[#00f0ff] transition-colors">
+                    <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2 group-hover:text-[#bcfc25] transition-colors">
                       {srv.title}
                     </h3>
 
@@ -205,7 +205,7 @@ export default function AboutPage() {
                         href={srv.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:text-[#33f3ff] transition-colors"
+                        className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:text-[#cbfd4e] transition-colors"
                       >
                         <span>{srv.linkText}</span>
                         <ExternalLink className="w-3.5 h-3.5" />
@@ -213,7 +213,7 @@ export default function AboutPage() {
                     ) : (
                       <Link
                         href={srv.href}
-                        className="inline-flex items-center gap-1.5 text-xs font-mono text-[#00f0ff] hover:text-[#33f3ff] transition-colors"
+                        className="inline-flex items-center gap-1.5 text-xs font-mono text-[#bcfc25] hover:text-[#cbfd4e] transition-colors"
                       >
                         <span>{srv.linkText}</span>
                         <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
@@ -232,7 +232,7 @@ export default function AboutPage() {
         <section id="team" className="space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-white/10 pb-4">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-mono text-[#00f0ff] uppercase tracking-wider mb-1">
+              <div className="inline-flex items-center gap-2 text-xs font-mono text-[#bcfc25] uppercase tracking-wider mb-1">
                 <Users className="w-3.5 h-3.5" />
                 Leadership & Operations
               </div>
@@ -249,27 +249,27 @@ export default function AboutPage() {
             {teamMembers.map((member, idx) => (
               <div
                 key={idx}
-                className="rounded-2xl p-6 sm:p-7 bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/50 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
+                className="rounded-2xl p-6 sm:p-7 bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/50 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
               >
                 {/* Top glow accent */}
-                <div className="absolute -top-12 -right-12 w-28 h-28 bg-[#00f0ff]/10 rounded-full blur-2xl pointer-events-none group-hover:bg-[#00f0ff]/20 transition-all" />
+                <div className="absolute -top-12 -right-12 w-28 h-28 bg-[#bcfc25]/10 rounded-full blur-2xl pointer-events-none group-hover:bg-[#bcfc25]/20 transition-all" />
 
                 <div className="space-y-4 relative z-10">
                   {/* Avatar & Role Badge */}
                   <div className="flex items-start justify-between">
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#07090e] to-[#0f172a] border border-white/15 flex items-center justify-center text-xl font-mono font-black text-white shadow-cyan-sm group-hover:border-[#00f0ff]/50 transition-all">
+                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-[#07090e] to-[#0f172a] border border-white/15 flex items-center justify-center text-xl font-mono font-black text-white shadow-cyan-sm group-hover:border-[#bcfc25]/50 transition-all">
                       <span className="bg-gradient-to-br from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
                         {member.initials}
                       </span>
                     </div>
-                    <span className="px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] font-semibold uppercase tracking-wider">
+                    <span className="px-3 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] font-semibold uppercase tracking-wider">
                       {member.role}
                     </span>
                   </div>
 
                   {/* Name & Focus */}
                   <div className="space-y-1">
-                    <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight group-hover:text-[#00f0ff] transition-colors">
+                    <h3 className="text-xl sm:text-2xl font-black text-white tracking-tight group-hover:text-[#bcfc25] transition-colors">
                       {member.name}
                     </h3>
                     <p className="text-xs font-mono text-zinc-400">
@@ -300,9 +300,9 @@ export default function AboutPage() {
         {/* ========================================================================= */}
         {/* DISCORD COMMUNITY CALLOUT CARD */}
         {/* ========================================================================= */}
-        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#0b0e14] via-[#0c1220] to-[#0b0e14] border border-[#00f0ff]/30 relative overflow-hidden shadow-[0_0_40px_rgba(0,240,255,0.08)] flex flex-col sm:flex-row items-center justify-between gap-6 group">
+        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-[#0b0e14] via-[#0c1220] to-[#0b0e14] border border-[#bcfc25]/30 relative overflow-hidden shadow-[0_0_40px_rgba(0,240,255,0.08)] flex flex-col sm:flex-row items-center justify-between gap-6 group">
           <div className="space-y-2 text-center sm:text-left relative z-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider">
               <DiscordIcon className="w-3.5 h-3.5" />
               Official Community
             </div>
@@ -318,7 +318,7 @@ export default function AboutPage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Join our Discord community"
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-all shadow-cyan-sm hover:shadow-cyan-md shrink-0 group-hover:scale-105 duration-200 relative z-10"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl text-sm font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-all shadow-cyan-sm hover:shadow-cyan-md shrink-0 group-hover:scale-105 duration-200 relative z-10"
           >
             <DiscordIcon className="w-4 h-4" />
             <span>Join Discord Server →</span>
@@ -331,18 +331,18 @@ export default function AboutPage() {
         <section className="space-y-8">
           <div className="rounded-3xl bg-gradient-to-b from-[#0b0e14] to-[#07090e] border border-[#1e293b] p-8 sm:p-12 relative overflow-hidden space-y-8 shadow-[0_0_50px_rgba(0,0,0,0.6)]">
             {/* Ambient corner highlights */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#00f0ff]/5 blur-3xl rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#bcfc25]/5 blur-3xl rounded-full pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#0080ff]/5 blur-3xl rounded-full pointer-events-none" />
 
             <div className="max-w-3xl space-y-4 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-mono text-[#00f0ff] uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#bcfc25]/10 border border-[#bcfc25]/30 text-xs font-mono text-[#bcfc25] uppercase tracking-wider">
                 <Target className="w-3.5 h-3.5" />
                 Our Mission
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
                 &ldquo;Make quality hosting{" "}
-                <span className="text-[#00f0ff] cyan-text-glow">
+                <span className="text-[#bcfc25] cyan-text-glow">
                   accessible to everyone.
                 </span>
                 &rdquo;
@@ -363,7 +363,7 @@ export default function AboutPage() {
                 We are deeply grateful to every player, bot developer, server administrator, and community leader who chooses to power their projects on Rim Cloud. Your feedback, uptime expectations, and trust drive our continuous system optimizations every single day.
               </p>
               <div className="pt-2 border-t border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono">
-                <div className="text-[#00f0ff] font-semibold">
+                <div className="text-[#bcfc25] font-semibold">
                   Rim Cloud — Reliable Hosting. Built for Your Community.
                 </div>
                 <div className="text-zinc-400">
@@ -373,7 +373,7 @@ export default function AboutPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Join our Discord community"
-                    className="text-[#00f0ff] underline hover:text-white"
+                    className="text-[#bcfc25] underline hover:text-white"
                   >
                     https://discord.gg/TpYMknnHsX
                   </a>
@@ -390,10 +390,10 @@ export default function AboutPage() {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://billing.rimcloud.site"
+                  href="https://billing.rimcloud.in/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-black bg-[#00f0ff] hover:bg-[#33f3ff] transition-all shadow-cyan-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-black bg-[#bcfc25] hover:bg-[#cbfd4e] transition-all shadow-cyan-sm"
                 >
                   <span>Deploy Now</span>
                   <ExternalLink className="w-4 h-4" />
@@ -413,25 +413,25 @@ export default function AboutPage() {
         <div className="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs font-mono">
           <Link
             href="/minecraft"
-            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/40 text-zinc-300 hover:text-white transition-colors text-center"
+            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/40 text-zinc-300 hover:text-white transition-colors text-center"
           >
             Minecraft Hosting →
           </Link>
           <Link
             href="/terms"
-            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/40 text-zinc-300 hover:text-white transition-colors text-center"
+            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/40 text-zinc-300 hover:text-white transition-colors text-center"
           >
             Terms of Service →
           </Link>
           <Link
             href="/refund"
-            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/40 text-zinc-300 hover:text-white transition-colors text-center"
+            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/40 text-zinc-300 hover:text-white transition-colors text-center"
           >
             Refund Policy →
           </Link>
           <Link
             href="/policies"
-            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#00f0ff]/40 text-zinc-300 hover:text-white transition-colors text-center"
+            className="p-3.5 rounded-xl bg-[#0b0e14] border border-[#1e293b] hover:border-[#bcfc25]/40 text-zinc-300 hover:text-white transition-colors text-center"
           >
             Policies Hub →
           </Link>
